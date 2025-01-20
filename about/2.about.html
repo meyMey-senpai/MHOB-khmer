@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Mhoub Khmer</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10em 0 ;
+            font-family:  sans-serif;
+            
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        h2{
+            font-size: 2em;
+            margin: 0;
+            margin-top: 5%;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        section {
+            padding: 2em;
+        }
+        
+        .about-us {
+            text-align: center;
+        }
+        
+        .about-us p {
+            margin-bottom: 1.5em;
+            font-size: 100%;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        
+        .stat p {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin: 2em auto 0;
+            margin-left: 45%;
+            padding: 1em 0.5em ;
+            padding-right: 1em ;
+            
+            background-color: #ff9900;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 1em;
+            text-align: center;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2em;
+            
+        }
+        
+        .image-container img {
+            width:30%;
+            height: auto;
+            height: inherit;
+            border: 3px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .team-member {
+            display: inline-block;
+            margin: 1em;
+            width: 200px;
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 1em;
+            margin-top: 10%;
+        }
+        
+            .team-member {
+                display: inline-block;
+                margin: 1em;
+                width: 200px;
+                text-align: center;
+                border: 3px solid #ddd; 
+                border-radius: 20px; 
+                padding: 1em; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .team-member img {
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+                margin-bottom: 1em;
+            }
+        
+            .team-member h3 {
+                margin-bottom: 0.5em;
+            }
+        
+            .team-member p {
+                margin: 0;
+            }          
+        
+        </style>
+
+    <header>
+        <h1>Welcome to <span style="color: #ff9900;">Mhoub Khmer</span></h1>
+        
+    </header>
+    <h2>About US</h2>
+
+    <section class="about-us">
+        <div class="image-container">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ca/5d/27/wwwchangkrankhmercom.jpg?w=1400&h=800&s=1" alt="Restaurant Interior">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/ed/af/cc/soothing-atmosphere-in.jpg?w=500&h=400&s=1" alt="Restaurant Food">
+            <img src="data:image/jpeg;base64,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" alt="Restaurant food">
+
+        </div>
+        <p>Mhoub Khmer was recently opened in January 2025. Mhoub Khmer is a sub restaurant by Eleven One Kitchen, Cambodia's first 99% plastic-free restaurant.</p>
+        <p>Mhoub Khmer came to life through Chef Mongkol’s love for traditional Khmer cuisine and his drive to serve the less fortunate around him. It is this passion that shaped Mhoub Khmer into a training center for young Cambodians. We teach eager students the cooking techniques to send guests on a culinary journey through our traditional Khmer tastes and flavors. Prepare to go back in time as you uncover the secrets of our traditional Khmer cuisine. We’ll deliver an unparalleled dining experience infused with Cambodia’s unique stories and culture.</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h2>3</h2>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat">
+            <h2>4</h2>
+            <p>Popular Master Chefs</p>
+        </div>
+    </section>
+    
+    <p class="read-more"><a href="#">Read More</a></p>
+    <section>
+        <h2>Our Top Chelf </h2>
+
+        <div class="team-member">
+            <img src="photo_2025-01-18_22-03-31 1.jpg" alt="Member 1">
+            <h3>Ms Jesica</h3>
+            <p>Head Chef</p>
+        </div>
+
+        <div class="team-member">
+            <img src="photo_2025-01-18_22-03-31 2.jpg" alt="Member 2">
+            <h3>Mr Kosal</h3>
+            <p>Senior Chef</p>
+        </div>
+
+        <div class="team-member">
+            <img src="photo_2025-01-18_22-15-14  11.jpg" alt="Member 3">
+            <h3>Ms Rotha</h3>
+            <p>Senior Chef</p>
+        </div>
+
+        <div class="team-member">
+            <img src="photo_2025-01-18_22-03-31.jpg" alt="Member 4">
+            <h3>Ms Kanika</h3>
+            <p>Senior Chef</p>
+        </div>
+        <div class="team-member">
+            <img src="photo_2025-01-18_22-03-32 5.jpg" alt="Member 4">
+            <h3>Ms Pisey </h3>
+            <p>Senior Chef</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHOUB KHMER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+  /*Styling for header*/
+  
+  {font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 25px;
+  overflow: hidden;
+  position: fixed;
+  width: 96%;
+}
+
+.navbar .logo span {
+  font-family: "CustomHandwriting", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.book-btn {
+  background-color: #228B22;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+    .hero-section {
+    display: flex;
+    align-items: 0;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #EEE;
+    color: #228B22;
+    }
+    
+    .hero-text h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-left: 90px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      color: #646161;
+      line-height: 1.6;
+      margin-left: 90px;
+    }
+
+    .hero-image img {
+      width: 300px; 
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+/*styling for the Food Category*/
+
+    {font-family: Arial, sans-serif;
+      : 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container p {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .food-item {
+      background: #EEEE;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .food-item img {
+      width: 100%px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .food-item h3 {
+      font-size: 1.25rem;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .food-item p {
+      font-size: 0.9rem;
+      color: #228B22;
+      margin-bottom: 10px;
+    }
+
+/*Why we are the best?*/
+
+    {
+  font-family: sans-serif;
+  
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      padding: 50px;
+    }
+
+    .image-section1 {
+      border-radius: 15px;
+      overflow: hidden;
+     
+    }
+
+    .image-section1 img {
+      width: 250px;
+      height: 350px;
+      object-fit: cover; 
+    }
+
+    .text-section1 {
+      width: 48%;
+      padding-left: 10px;
+    }
+
+    .title {
+      font-size: 35px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color: #228B22;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /*Stlyling of Footer section*/
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container3 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 50px;
+    }
+
+    .footer-section {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .footer-section h5 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 5px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container3 {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span> Mhoub Khmer</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a style="float:left" href="./1.Home Page.html">Home</a></li>
+        <li><a style="float:left" href="./about/2.about.html">About</a></li>
+        <li><a style="float:left" href="./3.Service.html">Service</a></li>
+        <li><a style="float:left" href="./MENU/4.MENU_NEWPAGE.html">Menu</a></li>
+        <li><a style="float:left" href="./contactus/5.contactus-page.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="./booking/Booking form.html" class="book-btn">
+      <span>Book a Table</span>
+    </a>
+  </header>
+
+    <main class="hero-section">
+        <div class="hero-text">
+            <h2>You Can Eat <br> Any Tasty <br> Food You Like.</h2>
+            <p>Enjoy delicious food every day. From your favorite meals to new recipes,<br>there's always something tasty to try. Enjoy delicious food every day. <br>From your favorite meals to new recipes, there's always something tasty to try. <br>Turn every meal into a moment to savor.</p>
+        </div>
+        <div class="hero-image">
+            <img src="./Home page.jpg" alt="Healthy bowl with chicken and vegetables">
+        </div>
+    </main>
+</body>
+
+<!-- Food Category -->
+
+<body>
+  <div class="container">
+    <h1>Food Category</h1>
+    <p>Delicious dishes for every meal—hearty breakfasts, flavorful lunches, satisfying dinners, and unique treats. Something for everyone to enjoy!.</p>
+    <div class="food-grid">
+      <div class="food-item">
+        <img src="Breakfast food.jpg" alt="Breakfast">
+        <h3>Breakfast</h3>
+        <p>26 Items</p>
+      </div>
+      <div class="food-item">
+        <img src="Lunch food.jpg" alt="Lunch">
+        <h3>Lunch</h3>
+        <p>23 Items</p>
+      </div>
+      <div class="food-item">
+        <img src="Dinner food.jpg" alt="Dinner">
+        <h3>Dinner</h3>
+        <p>20 Items</p>
+      </div>
+      <div class="food-item">
+        <img src="Nom Korm.jpg" alt="Nom Khmer">
+        <h3>Nom Korm</h3>
+        <p>26 Items</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why we are the best?  -->
+
+  <div class="container1">
+    <div class="image-section1">
+      <img src="chef cooking.jpg  " alt="Chef cooking">
+      <img src="ko ko.jpg" alt="Ko Ko khmer food">
+    </div>
+    <div class="text-section1">
+      <h2 class="title">Why We are the best?</h2>
+      <p class="description">MHOUB KHMER offers exceptional services to enhance your dining experience. Enjoy fast delivery with fresh, on-time meals and our 24/7 service to satisfy cravings anytime. We use only the finest ingredients, ensuring freshness and authentic flavors in every dish. With a strong commitment to quality standards, we deliver consistent excellence.</p>
+      <p class="description">Taste the perfect blend of convenience, flavor, and care with us. From the moment you place your order to the last bite, we ensure an unforgettable experience filled with authentic Khmer flavors and unmatched service. Let us be your go-to destination for delicious food.</p>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+   
+  <!-- Footer section -->
+
+  <footer class="footer">
+    <div class="container3">
+      <div class="footer-section">
+        <h5>Contact Us</h5>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
+        <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h5>MHOUB KHMER</h5>
+        <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
+        <div class="social-icons">
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h5>Opening Hours</h5>
+        <p>Everyday</p>
+        <p>7.00 Am - 11.00 Pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 All Rights Reserved By Kon Khmer</p>
+      <p>© Distributed By Mhoub KHMER</p>
+    </div>
+  </footer>
+    
+</body>   
+  
+
+
+
+  
+
+
+</html>

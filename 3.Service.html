@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MHOUB KHMER</title>
+  <style>
+  {font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 25px;
+}
+
+.navbar .logo span {
+  font-family: "CustomHandwriting", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.book-btn {
+  background-color: #228B22;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.services h2 {
+  color: rgb(9, 145, 32);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.services h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.service-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f90;
+}
+
+.service-card h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/*Stlyling of Footer section*/
+
+footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span> Mhoub Khmer</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a style="float:left" href="./1.Home Page.html">Home</a></li>
+        <li><a style="float:left" href="./about/2.about.html">About</a></li>
+        <li><a style="float:left" href="./3.Service.html">Service</a></li>
+        <li><a style="float:left" href="./MENU/4.MENU_NEWPAGE.html">Menu</a></li>
+        <li><a style="float:left" href="./contactus/5.contactus-page.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="./booking/Booking form.html" class="book-btn">
+      <span>Book a Table</span>
+    </a>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <h3>Explore Our Services</h3>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon">👨‍🍳</div>
+        <h4>Master Chefs</h4>
+        <p>Our highly skilled chefs bring their expertise and creativity to every dish, ensuring an unforgettable dining experience</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🍽️</div>
+        <h4>Quality Food</h4>
+        <p>We use only the freshest and finest ingredients to deliver meals that are both delicious and nutritious.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛒</div>
+        <h4>Online Order</h4>
+        <p>Convenient and fast! Place your order online and enjoy your favorite meals from the comfort of your home</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🎧</div>
+        <h4>24/7 Service</h4>
+        <p>We’re here for you anytime, day or night, offering excellent service around the clock</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer section -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
+        <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>MHOUB KHMER</h3>
+        <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
+        <div class="social-icons">
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Opening Hours</h3>
+        <p>Everyday</p>
+        <p>7.00 Am - 11.00 Pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 All Rights Reserved By Kon Khmer</p>
+      <p>© Distributed By Mhoub KHMER</p>
+    </div>
+  </footer> 
+</body>
+</html>

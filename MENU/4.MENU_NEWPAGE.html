@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grainsly Menu</title>
+    <link href='https://fonts.googleapis.com/css?family=Bayon|Francois+One' rel='stylesheet' type='text/css'>
+    <style>
+        {font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 25px;
+}
+
+.navbar .logo span {
+  font-family: "CustomHandwriting", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.book-btn {
+  background-color: #228B22;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+    .hero-section {
+    display: flex;
+    align-items: 0;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #EEE;
+    color: #228B22;
+    }
+    
+    .hero-text h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-left: 90px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      color: #646161;
+      line-height: 1.6;
+      margin-left: 90px;
+    }
+
+    .hero-image img {
+      width: 300px; 
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #40bc37; /* Green Text */
+            font-size: 25px;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icon {
+            margin: 0 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero-content h2, .hero-content h3 {
+            margin: 0;
+        }
+
+/*page2*/
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .category-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .category-menu button {
+            background-color: #bd820b;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .category-menu button.active {
+            background-color: #c81212;
+            color: white;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #eaf7e9;
+        }
+
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+			text-align: left;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+            color: #666;
+			text-align: left;
+        }
+
+        .menu-item .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .menu-item button {
+            background-color: #ffa726;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop>
+            <source src="videoMENU.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="header-container">
+            <div class="logo">
+            </div>
+
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>  
+    </header>
+    <div class="header">
+        <span style="font-family: 'Bayon'; font-size: 350%; text-decoration: underline; color: rgb(255, 119, 0);">នេះជាជម្រើសរបស់អ្នក</span>
+        <p><span style="font-family: 'Bayon'; font-size: 175%;">ដល់ម៉ោងញាំហើយតោះកម្មង់!!
+		</span></p>
+    </div>
+    <div class="category-menu">
+        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលព្រឹក</span></button>
+        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលថ្ងៃ</span></button>
+        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលល្ងាច</span></button>	
+        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">បង្អែម</span></button>
+    </div>
+	<div class="menu-container">
+        <!-- Repeatable Menu Items -->
+        <div class="menu-item">
+            <img src="Nom Banh Chok.jpg" alt="Dish">
+            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">នំបញ្ចុកសំឡខ្មែរ</span></h3>
+            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សម្លរខ្មែរសាច់ត្រី</span></p>
+			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
+            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        </div>
+        <div class="menu-item">
+            <img src="Nom Banh Chok. kary.jpg" alt="Dish">
+            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">នំបញ្ចុកសំឡការី</span></h3>
+            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សម្លរការីសាច់មាន់</span></p>
+			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
+            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        </div>
+        <div class="menu-item">
+            <img src="kuyteav.png" alt="Dish">
+            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">គុយទាវ</span></h3>
+            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: ប្រហិតសាច់គោ</span></p>
+			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">8000 រៀល</span></p>
+            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        </div>
+        <div class="menu-item">
+            <img src="kuyteavkhorko.jpg" alt="Dish">
+            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">គុយទាវខគោ</span></h3>
+            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សាច់ចម្រុះ</span></p>
+			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">8000 រៀល</span></p>
+            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        </div>
+        <div class="menu-item">
+            <img src="Bobor.jpg" alt="Dish">
+            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">បបរគ្រឿង</span></h3>
+            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សាច់មាន់</span></p>
+			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
+            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+		<div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+		<div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+		<div class="menu-item">
+            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
+            <h3>Картошка с котлетой</h3>
+            <p>Состав: картошка, котлета</p>
+            <p class="price">120 руб.</p>
+            <button>В корзину</button>
+        </div>
+    </div>
+
+    <script>
+        // Add functionality for active button highlighting
+        document.querySelectorAll('.category-menu button').forEach(button => {
+            button.addEventListener('click', function () {
+                document.querySelectorAll('.category-menu button').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
