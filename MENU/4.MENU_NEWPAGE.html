@@ -4,81 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grainsly Menu</title>
-    <link href='https://fonts.googleapis.com/css?family=Bayon|Francois+One' rel='stylesheet' type='text/css'>
     <style>
-        {font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;}
-  .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  color: #fff;
-  padding: 20px 25px;
-}
+        /* Header Styles */
+    .header1 {
+        background-image: url(/logo.png); /* Replace 'your_logo_path.png' with the actual path to your logo image */
+        background-repeat: no-repeat;
+        background-position: left center; 
+        background-size: auto 150px; /* Adjust height as needed */
+        padding-left: 60px;
+        background-color: #000000d7;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        position: sticky; /* Makes the header sticky */
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.navbar .logo span {
-  font-family: "CustomHandwriting", cursive;
-  font-size: 2rem;
-  font-weight: bold;
-}
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+    }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
+    .navbar {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: "Times New Roman", Times, serif;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.793);
+        position: relative;
+        -webkit-text-stroke:-10px black; 
+         text-stroke: 100px black; 
+        color: transparent; 
+    }
 
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin-right: 30px;
+    }
 
-.book-btn {
-  background-color: #228B22;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-}
+    .nav-links li {
+        display: inline;
+    }
 
-    .hero-section {
-    display: flex;
-    align-items: 0;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #EEE;
-    color: #228B22;
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Button */
+    .btn {
+        text-decoration: underline;
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
     }
     
-    .hero-text h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      line-height: 1.4;
-      margin-left: 90px;
-    }
-
-    .hero-text p {
-      font-size: 1rem;
-      color: #646161;
-      line-height: 1.6;
-      margin-left: 90px;
-    }
-
-    .hero-image img {
-      width: 300px; 
-      height: 300px;
-      border-radius: 50%;
-      overflow: hidden;
-      display: flex;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
-    }
+/*video*/
         body {
             font-family: sans-serif;
             margin: 0;
@@ -131,236 +130,508 @@
         }
 
 /*page2*/
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        .header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        .category-menu {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .category-menu button {
-            background-color: #bd820b;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .category-menu button.active {
-            background-color: #c81212;
-            color: white;
-        }
-
-        .menu-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background-color: #eaf7e9;
-        }
-
-        .menu-item {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .menu-item img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .menu-item h3 {
-            margin: 10px 0;
-            font-size: 1.2em;
-			text-align: left;
-        }
-
-        .menu-item p {
-            margin: 10px 0;
-            color: #666;
-			text-align: left;
-        }
-
-        .menu-item .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .menu-item button {
-            background-color: #ffa726;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+            .menu-container {
+                display: flex;
+                flex-wrap: wrap; /* Allow cards to wrap to the next line */
+                justify-content: flex-start;
+                justify-content: center;
+                
+            }
+    
+            .menu-item {
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding: 20px;
+                text-align: center;
+                width: 300px; /* Adjust width as needed */
+                margin-right: 20px; /* Space between items */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.415);
+                margin: 10px;
+            }
+    
+            .menu-item img {
+                max-width: 280px;
+                height: auto;
+                margin-bottom: -10px;
+            }
+    
+            .menu-item h3 {
+                margin-bottom: -10px;
+            }
+    
+            .menu-item p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+    
+            .price {
+                font-weight: bold;
+                font-size: 18px;
+            }
+    
+            .select-button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+    
+            /* Menu Tabs */
+            .menu-tabs {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                font-family: 'Playfair Display', serif; letter-spacing: -0.01em;
+            }
+    
+            .menu-tab {
+                padding: 10px 20px;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+    
+            .menu-tab.active {
+                background-color: #4CAF50;
+                color: white;
+            }
     </style>
 </head>
 <body>
+    <header1 class="header1">
+        <div class="logo"></div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#book" class="btn">Book a Table</a>
+        </nav>
+    </header1>
 
     <header>
         <video autoplay muted loop>
             <source src="videoMENU.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
-        <div class="header-container">
-            <div class="logo">
-            </div>
-
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>  
     </header>
-    <div class="header">
-        <span style="font-family: 'Bayon'; font-size: 350%; text-decoration: underline; color: rgb(255, 119, 0);">នេះជាជម្រើសរបស់អ្នក</span>
-        <p><span style="font-family: 'Bayon'; font-size: 175%;">ដល់ម៉ោងញាំហើយតោះកម្មង់!!
-		</span></p>
+        <section style="background-color: #ffffff; text-align: center; padding: 50px 0;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h1 style="font-size: 4.5rem; line-height: 1.2; color: #555; font-family: 'Playfair Display', serif; letter-spacing: -0.05em;">Choose & Order <span style="color: #ff6b6b; font-family: 'Playfair Display', serif; letter-spacing: -0.05em;">Your Menu</span></h1>
+                <p style="font-size: 1.5rem; margin-top: 20px; color: #777; font-family: 'Playfair Display', serif; letter-spacing: -0.02em;">Explore our diverse menu featuring a variety of appetizers, main courses, and desserts. Customize your selection with desired sides, sauces, and spice levels. Easily place your order online or in-store and enjoy a delicious dining experience.</p>
+              </div>
+      </section>
+
     </div>
-    <div class="category-menu">
-        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលព្រឹក</span></button>
-        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលថ្ងៃ</span></button>
-        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">ពេលល្ងាច</span></button>	
-        <button><span style="font-family: 'Bayon'; font-size: 165%; text-decoration: underline;">បង្អែម</span></button>
+    <div class="menu-tabs">
+        <div class="menu-tab active" onclick="showMenu('breakfast')">Breakfast</div>
+        <div class="menu-tab" onclick="showMenu('lunch')">Lunch</div>
+        <div class="menu-tab" onclick="showMenu('dinner')">Dinner</div>
+        <div class="menu-tab" onclick="showMenu('dessert')">Dessert</div>
     </div>
-	<div class="menu-container">
-        <!-- Repeatable Menu Items -->
-        <div class="menu-item">
-            <img src="Nom Banh Chok.jpg" alt="Dish">
-            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">នំបញ្ចុកសំឡខ្មែរ</span></h3>
-            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សម្លរខ្មែរសាច់ត្រី</span></p>
-			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
-            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+
+    <div class="menu-container">
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 1">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="Nom Banh Chok. kary.jpg" alt="Dish">
-            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">នំបញ្ចុកសំឡការី</span></h3>
-            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សម្លរការីសាច់មាន់</span></p>
-			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
-            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
+            <p>(Nom Banh Chok Somlor kary)</p>
+            <p>Type: Chicken soup</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="kuyteav.png" alt="Dish">
-            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">គុយទាវ</span></h3>
-            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: ប្រហិតសាច់គោ</span></p>
-			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">8000 រៀល</span></p>
-            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        <div class="menu-item breakfast">
+            <img src="kuyteav.png" alt="Breakfast Item 3">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">គុយទាវសាច់ត្រី</span></h3>
+            <p>(kuyteav sach trey)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$2 ~ 8000Riel</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="kuyteavkhorko.jpg" alt="Dish">
-            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">គុយទាវខគោ</span></h3>
-            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សាច់ចម្រុះ</span></p>
-			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">8000 រៀល</span></p>
-            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        <div class="menu-item breakfast">
+            <img src="kuyteavkhorko.jpg" alt="Breakfast Item 4">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">គុយទាវសាច់គោ</span></h3>
+            <p>(kuyteav khor ko)</p>
+            <p>Type: Beef soup</p>
+            <p class="price">$2 ~ 8000Riel</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="Bobor.jpg" alt="Dish">
-            <h3><span style="font-family: 'Bayon'; font-size: 125%; text-decoration: underline; color: rgb(255, 119, 0);">បបរគ្រឿង</span></h3>
-            <p><span style="font-family: 'Bayon'; font-size: 90%;">ប្រភេទ: សាច់មាន់</span></p>
-			<p class="price"><span style="font-family: 'Bayon'; font-size: 95%;">5000 រៀល</span></p>
-            <button><span style="font-family: 'Bayon'; font-size: 125%;">ដាក់កម្មង</span></button>
+        <div class="menu-item breakfast">
+            <img src="Bobor.jpg" alt="Breakfast Item 5">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">បបរគ្រឿង</span></h3>
+            <p>(BorBor Kroeng)</p>
+            <p>Type: Chicken soup</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="Breakfast/Bai Sach Chrouk.jpg" alt="Breakfast Item 1">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="kuyteav.png" alt="Breakfast Item 3">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(kuyteav Sach trey)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="kuyteavkhorko.jpg" alt="Breakfast Item 4">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 5">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-        <div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 1">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-		<div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item breakfast">
+            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
+            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
+            <p>(Nom Banh Chok Somlor khmer)</p>
+            <p>Type: fish soup</p>
+            <p class="price">$5.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-		<div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        
+
+
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch1.jpg" alt="Lunch Item 1">
+            <h3>Lunch Item 1</h3>
+            <p>Description of Lunch Item 1</p>
+            <p class="price">$12.99</p>
+            <button class="select-button">SELECT</button>
         </div>
-		<div class="menu-item">
-            <img src="/mnt/data/Nom%20Banh%20Chok.jpg" alt="Dish">
-            <h3>Картошка с котлетой</h3>
-            <p>Состав: картошка, котлета</p>
-            <p class="price">120 руб.</p>
-            <button>В корзину</button>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch2.jpg" alt="Lunch Item 2">
+            <h3>Lunch Item 2</h3>
+            <p>Description of Lunch Item 2</p>
+            <p class="price">$10.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch3.jpg" alt="Lunch Item 3">
+            <h3>Lunch Item 3</h3>
+            <p>Description of Lunch Item 3</p>
+            <p class="price">$11.75</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch1.jpg" alt="Lunch Item 1">
+            <h3>Lunch Item 1</h3>
+            <p>Description of Lunch Item 1</p>
+            <p class="price">$12.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch2.jpg" alt="Lunch Item 2">
+            <h3>Lunch Item 2</h3>
+            <p>Description of Lunch Item 2</p>
+            <p class="price">$10.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch3.jpg" alt="Lunch Item 3">
+            <h3>Lunch Item 3</h3>
+            <p>Description of Lunch Item 3</p>
+            <p class="price">$11.75</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch1.jpg" alt="Lunch Item 1">
+            <h3>Lunch Item 1</h3>
+            <p>Description of Lunch Item 1</p>
+            <p class="price">$12.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch2.jpg" alt="Lunch Item 2">
+            <h3>Lunch Item 2</h3>
+            <p>Description of Lunch Item 2</p>
+            <p class="price">$10.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch3.jpg" alt="Lunch Item 3">
+            <h3>Lunch Item 3</h3>
+            <p>Description of Lunch Item 3</p>
+            <p class="price">$11.75</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch1.jpg" alt="Lunch Item 1">
+            <h3>Lunch Item 1</h3>
+            <p>Description of Lunch Item 1</p>
+            <p class="price">$12.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch2.jpg" alt="Lunch Item 2">
+            <h3>Lunch Item 2</h3>
+            <p>Description of Lunch Item 2</p>
+            <p class="price">$10.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item lunch" style="display: none;">
+            <img src="lunch3.jpg" alt="Lunch Item 3">
+            <h3>Lunch Item 3</h3>
+            <p>Description of Lunch Item 3</p>
+            <p class="price">$11.75</p>
+            <button class="select-button">SELECT</button>
+        </div>
+
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner1.jpg" alt="Dinner Item 1">
+            <h3>Dinner Item 1</h3>
+            <p>Description of Dinner Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner2.jpg" alt="Dinner Item 2">
+            <h3>Dinner Item 2</h3>
+            <p>Description of Dinner Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner3.jpg" alt="Dinner Item 3">
+            <h3>Dinner Item 3</h3>
+            <p>Description of Dinner Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner1.jpg" alt="Dinner Item 1">
+            <h3>Dinner Item 1</h3>
+            <p>Description of Dinner Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner2.jpg" alt="Dinner Item 2">
+            <h3>Dinner Item 2</h3>
+            <p>Description of Dinner Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner3.jpg" alt="Dinner Item 3">
+            <h3>Dinner Item 3</h3>
+            <p>Description of Dinner Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner1.jpg" alt="Dinner Item 1">
+            <h3>Dinner Item 1</h3>
+            <p>Description of Dinner Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner2.jpg" alt="Dinner Item 2">
+            <h3>Dinner Item 2</h3>
+            <p>Description of Dinner Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner3.jpg" alt="Dinner Item 3">
+            <h3>Dinner Item 3</h3>
+            <p>Description of Dinner Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner1.jpg" alt="Dinner Item 1">
+            <h3>Dinner Item 1</h3>
+            <p>Description of Dinner Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner2.jpg" alt="Dinner Item 2">
+            <h3>Dinner Item 2</h3>
+            <p>Description of Dinner Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dinner" style="display: none;">
+            <img src="dinner3.jpg" alt="Dinner Item 3">
+            <h3>Dinner Item 3</h3>
+            <p>Description of Dinner Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div>
+
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert1.jpg" alt="Dessert Item 1">
+            <h3>Dessert Item 1</h3>
+            <p>Description of Dessert Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert2.jpg" alt="Dessert Item 2">
+            <h3>Dessert Item 2</h3>
+            <p>Description of Dessert Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert3.jpg" alt="Dessert Item 3">
+            <h3>Dessert Item 3</h3>
+            <p>Description of Dessert Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert1.jpg" alt="Dessert Item 1">
+            <h3>Dessert Item 1</h3>
+            <p>Description of Dessert Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert2.jpg" alt="Dessert Item 2">
+            <h3>Dessert Item 2</h3>
+            <p>Description of Dessert Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert3.jpg" alt="Dessert Item 3">
+            <h3>Dessert Item 3</h3>
+            <p>Description of Dessert Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div><div class="menu-item dessert" style="display: none;">
+            <img src="dessert1.jpg" alt="Dessert Item 1">
+            <h3>Dessert Item 1</h3>
+            <p>Description of Dessert Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert2.jpg" alt="Dessert Item 2">
+            <h3>Dessert Item 2</h3>
+            <p>Description of Dessert Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert3.jpg" alt="Dessert Item 3">
+            <h3>Dessert Item 3</h3>
+            <p>Description of Dessert Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
+        </div><div class="menu-item dessert" style="display: none;">
+            <img src="dessert1.jpg" alt="Dessert Item 1">
+            <h3>Dessert Item 1</h3>
+            <p>Description of Dessert Item 1</p>
+            <p class="price">$15.99</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert2.jpg" alt="Dessert Item 2">
+            <h3>Dessert Item 2</h3>
+            <p>Description of Dessert Item 2</p>
+            <p class="price">$18.50</p>
+            <button class="select-button">SELECT</button>
+        </div>
+        <div class="menu-item dessert" style="display: none;">
+            <img src="dessert3.jpg" alt="Dessert Item 3">
+            <h3>Dessert Item 3</h3>
+            <p>Description of Dessert Item 3</p>
+            <p class="price">$17.25</p>
+            <button class="select-button">SELECT</button>
         </div>
     </div>
 
     <script>
-        // Add functionality for active button highlighting
-        document.querySelectorAll('.category-menu button').forEach(button => {
-            button.addEventListener('click', function () {
-                document.querySelectorAll('.category-menu button').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
+        function showMenu(menuType) {
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            menuItems.forEach(item => {
+                if (item.classList.contains(menuType)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
             });
-        });
+
+            // Update active tab
+            const menuTabs = document.querySelectorAll('.menu-tab');
+            menuTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`.menu-tab[onclick="showMenu('${menuType}')"]`).classList.add('active');
+        }
     </script>
+
+</body>
+</html>
+
+<script>
+    function selectItem(button) {
+        // Get the menu item container
+        const menuItem = button.closest('.menu-item');
+
+        // Get the burger name
+        const burgerName = menuItem.querySelector('h3').textContent;
+
+        // Log the selected item to the console
+        console.log('Selected:', burgerName);
+
+        // **Here you would add logic to handle the selected item, such as:**
+        // - Add the item to a cart
+        // - Display a message to the user
+        // - Redirect to a different page 
+    }
+</script>
+
 </body>
 </html>
