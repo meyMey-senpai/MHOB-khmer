@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grainsly Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">  </style>
     <style>
         /* Header Styles */
     .header1 {
-        background-image: url(/logo.png); /* Replace 'your_logo_path.png' with the actual path to your logo image */
-        background-repeat: no-repeat;
-        background-position: left center; 
-        background-size: auto 150px; /* Adjust height as needed */
         padding-left: 60px;
         background-color: #000000d7;
         color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 25px;
+        padding: 5px 30px;
         position: sticky; /* Makes the header sticky */
         top: 0;
         z-index: 1000;
@@ -25,15 +24,24 @@
     }
 
     .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: 'Arial', sans-serif;
-    }
+            margin-right: 20px; 
+        }
+
+    .logo img {
+            max-width: 100px; 
+            height: auto; 
+        }
+
+        .Text {
+            font-family: 'Pacifico', cursive;
+            margin-left: -650px;
+            font-size: 1.5rem;
+        }
 
     .navbar {
         display: flex;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: "Times New Roman", Times, serif;
         text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.793);
         position: relative;
@@ -68,9 +76,9 @@
         text-decoration: underline;
         background-color: #4CAF50;
         color: white;
-        padding: 5px 10px;
+        padding: 10px 10px;
         border-radius: 5px;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .btn:hover {
@@ -150,20 +158,32 @@
             }
     
             .menu-item img {
-                max-width: 280px;
-                height: auto;
-                margin-bottom: -10px;
+                max-width: 300px;
+                height: 300px;
+                object-fit: cover;
             }
     
             .menu-item h3 {
                 margin-bottom: -10px;
+                text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.793);
+                letter-spacing: 0.01em;
+                font-family: 'Battambang', serif; /* Use the font */;
+                font-size: 150%;
+                color: #57ab1b;
+                text-decoration: underline;
+                margin-top: -3px;
+                
             }
     
             .menu-item p {
-                font-size: 14px;
+                font-size: 17px;
                 margin-bottom: 10px;
+                font-family: "Times New Roman", Times, serif;
+                margin-top: 15px;
+                
+                
             }
-    
+
             .price {
                 font-weight: bold;
                 font-size: 18px;
@@ -185,10 +205,11 @@
                 justify-content: center;
                 margin-bottom: 20px;
                 font-family: 'Playfair Display', serif; letter-spacing: -0.01em;
+                font-size: 1.6rem;
             }
     
             .menu-tab {
-                padding: 10px 20px;
+                padding: 15px 17px;
                 background-color: #f0f0f0;
                 border-radius: 5px;
                 margin-right: 10px;
@@ -199,17 +220,87 @@
                 background-color: #4CAF50;
                 color: white;
             }
+/*cardordered*/
+            .confirmation-card {
+                background-color: #060806;
+                border-radius: 5px;
+                padding: 20px;
+                text-align: center;
+                margin-top: 30px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.415);
+            }
+
+/*Stlyling of Footer section*/
+
+    footer {
+      background-color: #000000d7;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container3 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 50px;
+    }
+
+    .footer-section {
+      flex: 1;
+      margin: 5px;
+      margin-top: -25px;
+    }
+
+    .footer-section h5 {
+      font-size: 1.5rem;
+      margin-bottom: -1px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .footer-section p {
+      margin: 13px 0;
+      font-family: serif;
+      font-size: 17px;
+    }
+
+    .social-icons {
+    display: flex; /* Enable flexbox for the icons */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    gap: 10px; /* Add spacing between icons */
+}
+    .social-icons a {
+      display: inline-block;
+      margin: 0 5px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+      margin-top: -10px;
+      font-size: 15px;
+
+    }
+
+    .footer-bottom p {
+      margin: 5px 0;
+      font-family: serif;
+    }
     </style>
 </head>
 <body>
     <header1 class="header1">
-        <div class="logo"></div>
+        <div class="logo"><img src="logo.png" alt="Mhoub Khmer Logo">
+        </div>
+        <div class="Text">Mhoub Khmer</div>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./3.Service.html">Service</a></li>
+                <li><a href="./4.MENU_NEWPAGE.html">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="#book" class="btn">Book a Table</a>
@@ -237,188 +328,208 @@
         <div class="menu-tab" onclick="showMenu('dessert')">Dessert</div>
     </div>
 
+    <div class="confirmation-card" id="confirmationCard" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); z-index: 1001;">  <div class="confirmation-card-content">
+        <img src="" alt="Selected Item Image" id="confirmationImage" style="max-width: 200px; height: auto; margin-bottom: 10px;">
+        <div class="item-name" id="confirmationName" style="font-weight: bold; margin-bottom: 10px;"></div>
+        <button class="close-button" onclick="closeConfirmationCard()" style="background-color: #ccc; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;">Close</button>
+        <button class="submit-button" onclick="submitOrder()" style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+    </div>
+</div>
+
     <div class="menu-container">
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 1">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
+            <img src="Breakfast/1. នំបញ្ចុកសម្លរខ្មែរ.jpg" alt="Breakfast Item 1">
+            <h3>នំបញ្ចុកសម្លរខ្មែរ</h3>
             <p>(Nom Banh Chok Somlor khmer)</p>
             <p>Type: fish soup</p>
             <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
+            <img src="Breakfast/2. នំបញ្ចុកសម្លរការី.jpg" alt="Breakfast Item 2">
+            <h3>នំបញ្ចុកសម្លរការី</h3>
             <p>(Nom Banh Chok Somlor kary)</p>
             <p>Type: Chicken soup</p>
             <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="kuyteav.png" alt="Breakfast Item 3">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">គុយទាវសាច់ត្រី</span></h3>
+            <img src="Breakfast/3. គុយទាវសាច់ត្រី.png" alt="Breakfast Item 3">
+            <h3>គុយទាវសាច់ត្រី</h3>
             <p>(kuyteav sach trey)</p>
             <p>Type: fish soup</p>
             <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="kuyteavkhorko.jpg" alt="Breakfast Item 4">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">គុយទាវសាច់គោ</span></h3>
+            <img src="Breakfast/4. គុយទាវសាច់គោ.jpg" alt="Breakfast Item 4">
+            <h3>គុយទាវសាច់គោ</h3>
             <p>(kuyteav khor ko)</p>
             <p>Type: Beef soup</p>
             <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Bobor.jpg" alt="Breakfast Item 5">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">បបរគ្រឿង</span></h3>
+            <img src="Breakfast/5. បបរ.jpg" alt="Breakfast Item 5">
+            <h3>បបរគ្រឿង</h3>
             <p>(BorBor Kroeng)</p>
             <p>Type: Chicken soup</p>
             <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Breakfast/Bai Sach Chrouk.jpg" alt="Breakfast Item 1">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/6. បាយសាច់ជ្រូក.jpg" alt="Breakfast Item 6">
+            <h3>បាយសាច់ជ្រូក</h3>
+            <p>(Bai Sach Chrouk)</p>
+            <p>Type: Rice with Pork</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/7. បាយសាច់មាន់.jpg" alt="Breakfast Item 7">
+            <h3>បាយសាច់មាន់</h3>
+            <p>(Bai Sach Morn)</p>
+            <p>Type: Rice with chicken</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="kuyteav.png" alt="Breakfast Item 3">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
-            <p>(kuyteav Sach trey)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/8. បាយឆាគ្រឿងសមុទ្រ.jpg" alt="Breakfast Item 8">
+            <h3>បាយឆាគ្រឿងសមុទ្រ</h3>
+            <p>(Bai Cha Kroeng Samut)</p>
+            <p>Type: Fried Rice with Shrimp</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="kuyteavkhorko.jpg" alt="Breakfast Item 4">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/9. បាយឆាកាពិ.jpg" alt="Breakfast Item 9">
+            <h3>បាយឆាកាពិ</h3> 
+            <p>(Bai Cha Kapi)</p>
+            <p>Type: Fried Rice with Shrimp Paste</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 5">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/10. បាយឡុកឡាក.jpg"Breakfast Item 10">
+            <h3>បាយឡុកឡាក</h3> 
+            <p>(Bai Lok Lak)</p>
+            <p>Type: Cambodian Shaking Beef</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok.jpg" alt="Breakfast Item 1">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរខ្មែរ</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/11. មីឆាគ្រឿងសមុទ្រ.jpg" alt="Breakfast Item 11">
+            <h3>មីឆាគ្រឿងសមុទ្រ</h3> 
+            <p>(Mi Cha Kroeng samut)</p>
+            <p>Type: Noodle stir fry Shrimp</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item breakfast">
-            <img src="Nom Banh Chok. kary.jpg" alt="Breakfast Item 2">
-            <h3><span style="font-family: 'Bayon'; font-size: 115%; color: #57ab1b;">នំបញ្ចុកសម្លរការី</span></h3>
-            <p>(Nom Banh Chok Somlor khmer)</p>
-            <p>Type: fish soup</p>
-            <p class="price">$5.99</p>
+            <img src="Breakfast/12. លតឆា.jpg" alt="Breakfast Item 12">
+            <h3>លតឆា</h3> 
+            <p>(Lort Cha)</p>
+            <p>Type: Stir fried rice drops</p>
+            <p class="price">$1.25 ~ 5000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         
 
 
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch1.jpg" alt="Lunch Item 1">
-            <h3>Lunch Item 1</h3>
-            <p>Description of Lunch Item 1</p>
-            <p class="price">$12.99</p>
+            <img src="Lunch/1. អាម៉ុកត្រី.jpg" alt="Lunch Item 1">
+            <h3>អាម៉ុកត្រី</h3>
+            <p>(Amok Trey)</p>
+            <p>Type: Steam Chicken Amok</p>
+            <p class="price">$3 ~ 12000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch2.jpg" alt="Lunch Item 2">
-            <h3>Lunch Item 2</h3>
-            <p>Description of Lunch Item 2</p>
-            <p class="price">$10.50</p>
+            <img src="Lunch/2. ប្រហុកខ្ទិះ.jpg" alt="Lunch Item 2">
+            <h3>ប្រហុកខ្ទិះ</h3>
+            <p>(Prohok Ktis)</p>
+            <p>Type: Khmer Fusion Food</p>
+            <p class="price">$3 ~ 12000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch3.jpg" alt="Lunch Item 3">
-            <h3>Lunch Item 3</h3>
-            <p>Description of Lunch Item 3</p>
-            <p class="price">$11.75</p>
+            <img src="Lunch/3. សម្លរប្រហើរ.jpg" alt="Lunch Item 3">
+            <h3>សម្លរប្រហើរ</h3>
+            <p>(Somlor Proher)</p>
+            <p>Type: Fragrant vegetable soup</p>
+            <p class="price">$3 ~ 12000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch1.jpg" alt="Lunch Item 1">
-            <h3>Lunch Item 1</h3>
-            <p>Description of Lunch Item 1</p>
-            <p class="price">$12.99</p>
+            <img src="Lunch/4. សម្លកកូរ.jpg" alt="Lunch Item 4">
+            <h3>សម្លកកូរ</h3>
+            <p>(Samlor Korko)</p>
+            <p>Type: Cambodian Special Vegetables Soup</p>
+            <p class="price">$3 ~ 12000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch2.jpg" alt="Lunch Item 2">
-            <h3>Lunch Item 2</h3>
-            <p>Description of Lunch Item 2</p>
-            <p class="price">$10.50</p>
+            <img src="Lunch/5. ស្ងោជ្រក់មាន.jpg" alt="Lunch Item 5">
+            <h3>ស្ងោជ្រក់មាន</h3>
+            <p>(Sngao Chrork Morn)</p>
+            <p>Type: Chicken Soup</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch3.jpg" alt="Lunch Item 3">
-            <h3>Lunch Item 3</h3>
-            <p>Description of Lunch Item 3</p>
-            <p class="price">$11.75</p>
+            <img src="Lunch/6. សម្លការី.png" alt="Lunch Item 6">
+            <h3>សម្លការី</h3>
+            <p>(Somlor Curry)</p>
+            <p>Type: Cambodian Chicken Curry</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch1.jpg" alt="Lunch Item 1">
-            <h3>Lunch Item 1</h3>
-            <p>Description of Lunch Item 1</p>
-            <p class="price">$12.99</p>
+            <img src="Lunch/7. សម្លម្ជូរគ្រឿងសាច់គោ.jpg" alt="Lunch Item 7">
+            <h3>សម្លម្ជូរគ្រឿងសាច់គោ</h3>
+            <p>(Samlor M’chu Kroeung Sach Ko)</p>
+            <p>Type: Lemongrass beef sour soup</p>
+            <p class="price">$1.50 ~ 6000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch2.jpg" alt="Lunch Item 2">
-            <h3>Lunch Item 2</h3>
-            <p>Description of Lunch Item 2</p>
-            <p class="price">$10.50</p>
+            <img src="Lunch/8. អន្លក់ត្រីងៀត.jpg" alt="Lunch Item 8">
+            <h3>អន្លក់ត្រីងៀត</h3>
+            <p>(Aluek trei ngeat)</p>
+            <p>Dried fish and watermelon</p>
+            <p class="price">$1.75 ~ 7000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch3.jpg" alt="Lunch Item 3">
-            <h3>Lunch Item 3</h3>
-            <p>Description of Lunch Item 3</p>
-            <p class="price">$11.75</p>
+            <img src="Lunch/9. ឆាគ្រឿងសាច់គោ.jpg" alt="Lunch Item 9">
+            <h3>ឆាគ្រឿងសាច់គោ</h3>
+            <p>(Cha Kroeng Sach Ko)</p>
+            <p>Beef Stir Fry</p>
+            <p class="price">$2.50 ~ 10000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch1.jpg" alt="Lunch Item 1">
-            <h3>Lunch Item 1</h3>
-            <p>Description of Lunch Item 1</p>
-            <p class="price">$12.99</p>
+            <img src="Lunch/10. ជ្រក់ក្រៅឆ្នាំង.jpg" alt="Lunch Item 10">
+            <h3>ជ្រក់ក្រៅឆ្នាំង</h3>
+            <p>(Chrok Krao Chhnang)</p>
+            <p>Out of the pot soup</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch2.jpg" alt="Lunch Item 2">
-            <h3>Lunch Item 2</h3>
-            <p>Description of Lunch Item 2</p>
-            <p class="price">$10.50</p>
+            <img src="Lunch/11. ឆាត្រប់ដុត.jpg" alt="Lunch Item 11">
+            <h3>ឆាត្រប់ដុត</h3>
+            <p>(Chha Trop Dott)</p>
+            <p>Grilled eggplant with pork</p>
+            <p class="price">$2 ~ 8000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
         <div class="menu-item lunch" style="display: none;">
-            <img src="lunch3.jpg" alt="Lunch Item 3">
-            <h3>Lunch Item 3</h3>
-            <p>Description of Lunch Item 3</p>
-            <p class="price">$11.75</p>
+            <img src="Lunch/12. ខត្រីស្វាយខ្ចី.jpg" alt="Lunch Item 12">
+            <h3>ខត្រីស្វាយខ្ចី</h3>
+            <p>(Khor Trei Svay Kchai)</p>
+            <p>Caramelized fish with green mango</p>
+            <p class="price">$1.75 ~ 7000Riel</p>
             <button class="select-button">SELECT</button>
         </div>
 
@@ -590,6 +701,37 @@
             <button class="select-button">SELECT</button>
         </div>
     </div>
+ <!-- Footer section -->
+    <footer class="footer">
+        <div class="container3">
+          <div class="footer-section">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-map-marker-alt"></i> Location</p>
+            <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
+            <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
+          </div>
+    
+          <div class="footer-section">
+            <h5>Mhoub Khmer</h5>
+            <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
+            <div class="social-icons">
+                <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="margin-right: 10px;"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+    
+          <div class="footer-section">
+            <h5>Opening Hours</h5>
+            <p>Everyday</p>
+            <p>7.00 Am - 11.00 Pm</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 All Rights Reserved By Kon Khmer</p>
+          <p>© Distributed By Mhoub KHMER</p>
+        </div>
 
     <script>
         function showMenu(menuType) {
@@ -610,28 +752,52 @@
             });
             document.querySelector(`.menu-tab[onclick="showMenu('${menuType}')"]`).classList.add('active');
         }
+        function selectItem(button) {
+            const menuItem = button.closest('.menu-item');
+            const itemName = menuItem.querySelector('h3').textContent;
+            const itemImage = menuItem.querySelector('img').src;
+
+            document.getElementById('confirmationImage').src = itemImage;
+            document.getElementById('confirmationName').textContent = itemName;
+            document.getElementById('confirmationCard').style.display = 'block';
+        }
+
+        function closeConfirmationCard() {
+            document.getElementById('confirmationCard').style.display = 'none';
+        }
+
+        function submitOrder() {
+            const itemName = document.getElementById('confirmationName').textContent;
+
+            fetch('/send-email', { // Replace with your Java backend endpoint URL
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ itemName: itemName })
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Order submitted!");
+                } else {
+                    alert("Error submitting order. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Error submitting order. Please try again.");
+            });
+
+            closeConfirmationCard();
+        }
+
+        // Add onclick to all select buttons:
+        const selectButtons = document.querySelectorAll('.select-button');
+        selectButtons.forEach(button => {
+            button.onclick = () => selectItem(button);
+        });
+
     </script>
-
-</body>
-</html>
-
-<script>
-    function selectItem(button) {
-        // Get the menu item container
-        const menuItem = button.closest('.menu-item');
-
-        // Get the burger name
-        const burgerName = menuItem.querySelector('h3').textContent;
-
-        // Log the selected item to the console
-        console.log('Selected:', burgerName);
-
-        // **Here you would add logic to handle the selected item, such as:**
-        // - Add the item to a cart
-        // - Display a message to the user
-        // - Redirect to a different page 
-    }
-</script>
 
 </body>
 </html>

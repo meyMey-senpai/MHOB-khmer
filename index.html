@@ -3,60 +3,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MHOUB KHMER</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
 
-  /*Styling for header*/
+  /*Styling for header navbar*/
   
-  {font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;}
-  .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #041e1adf;
-  color: #fff;
-  padding: 20px 25px;
-  overflow: hidden;
-  position: fixed;
-  width: 96%;
-}
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.navbar .logo span {
-  font-family: "CustomHandwriting", cursive;
-  font-size: 2rem;
-  font-weight: bold;
-}
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
+    /* Header Styles */
+    
+    .header {
+        background-color: #000000d7;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+    .Text {
+        font-size: 1.5rem;
+        font-family: 'Pacifico', cursive;
+        margin-left: -610px;
+    }
 
-.book-btn {
-  background-color: #228B22;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-}
+    .logo img {
+            width: 100px; 
+            height: auto; 
+        }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        font-family: "Times New Roman", Times, serif;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.793);
+        position: relative;
+        -webkit-text-stroke:-10px black; 
+        -webkit-text-stroke-color: 100px black; 
+        color: transparent; 
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin-right: 30px;
+    }
+
+    .nav-links li {
+        display: inline;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Button */
+    .btn {
+        text-decoration: underline;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+ 
+    /* hero-section*/
 
     .hero-section {
     display: flex;
     align-items: 0;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
     background-color: #EEE;
     color: #228B22;
     }
@@ -66,13 +105,15 @@
       font-weight: bold;
       line-height: 1.4;
       margin-left: 90px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     }
 
     .hero-text p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #646161;
       line-height: 1.6;
       margin-left: 90px;
+      font-family: serif;
     }
 
     .hero-image img {
@@ -87,11 +128,9 @@
 
 /*styling for the Food Category*/
 
-    {font-family: Arial, sans-serif;
-      : 0;
+    body{font-family: Arial, sans-serif;
       padding: 0;
       background-color: #f8f8f8;
-      margin: 0;
     }
 
     .container {
@@ -103,7 +142,8 @@
 
     .container h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 30px;
+      margin-top: 60px;
     }
 
     .container p {
@@ -123,6 +163,11 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       text-align: center;
+      zoom: 1;
+      transition: zoom 100s linear;
+    }
+    .food-item:hover{
+      zoom:1.2;
     }
 
     .food-item img {
@@ -135,6 +180,7 @@
       font-size: 1.25rem;
       margin: 10px 0 5px;
       font-weight: bold;
+      font-family: serif;
     }
 
     .food-item p {
@@ -145,28 +191,32 @@
 
 /*Why we are the best?*/
 
-    {
-  font-family: sans-serif;
+    body{font-family: sans-serif;
   
     }
 
     .container1 {
       display: flex;
       justify-content: space-between;
-      margin-top: 100px;
-      padding: 50px;
+      margin-top: 30px;
+      padding: 150px;
     }
 
     .image-section1 {
       border-radius: 15px;
       overflow: hidden;
-     
     }
 
     .image-section1 img {
       width: 250px;
       height: 350px;
-      object-fit: cover; 
+      object-fit: cover;
+      zoom: 1;
+      transition: zoom 100s linear;
+    }
+
+    .image-section1 :hover  {
+      zoom: 1.1;
     }
 
     .text-section1 {
@@ -175,22 +225,135 @@
     }
 
     .title {
-      font-size: 35px;
-      margin-bottom: 10px;
-      margin-top: 10px;
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: 15px;
       color: #228B22;
-      font-weight: bold;
+      font-family: 'Pacifico', cursive;
     }
 
     .description {
+      font-size: 18px;
+      color: #000;
+      font-family: serif;
+    }
+
+    /*Styling for Customer review*/
+
+    body {
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .testimonial-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial-text {
+      max-width: 50%;
+    }
+
+    .testimonial-text h6 {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    .testimonial-text p {
+      color: #000;
+      line-height: 1.8rem;
+      font-family: serif;
+      
+    }
+
+    .customer {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .customer img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .customer-info {
+      font-size: 14px;
+    }
+
+    .customer-info h4 {
+      margin: 0;
       font-size: 16px;
+      font-weight: bold;
+    }
+
+    .customer-info span {
+      color: #888;
+    }
+
+    .image-section {
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .image-section img {
+      width: 430px;
+      border-radius: 20px;
+      zoom: 1;
+      transition: zoom 100s linear;
+    }
+
+    .image-section  :hover{
+      zoom: 1.1;
+    }
+
+    .card {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      background: #EEEE;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+
+    .card h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card .price {
+      float: right;
+      color: #888;
+    }
+
+    .card p {
       color: #666;
+      font-size: 20px;
+      margin: 10px 0 0 0;
+      line-height: 1.4;
+      font-family: serif;
+    }
+
+    .card .stars {
+      color: #FFD700;
+      font-size: 14px;
     }
 
     /*Stlyling of Footer section*/
 
     footer {
-      background-color: #000;
+      background-color: #000000d7;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -211,10 +374,13 @@
     .footer-section h5 {
       font-size: 1.5rem;
       margin-bottom: 15px;
+      font-family: 'Pacifico', cursive;
     }
 
     .footer-section p {
-      margin: 5px 0;
+      margin: 13px 0;
+      font-family: serif;
+      font-size: 17px;
     }
 
     .social-icons a {
@@ -226,41 +392,147 @@
     }
 
     .footer-bottom {
-      margin-top: 20px;
-      font-size: 0.9rem;
+      margin-top: 10px;
+      font-size: 15px;
     }
 
     .footer-bottom p {
       margin: 5px 0;
+      font-family: serif;
     }
 
-    @media (max-width: 768px) {
-      .container3 {
-        flex-direction: column;
-        align-items: center;
-      }
+/*Styling for Customer review*/
+
+    body {
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
     }
+
+    .testimonial-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial-text {
+      max-width: 50%;
+    }
+
+    .testimonial-text h6 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-text p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .customer {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .customer img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .customer-info {
+      font-size: 14px;
+    }
+
+    .customer-info h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .customer-info span {
+      color: #888;
+    }
+
+    .image-section {
+      position: relative;
+    }
+
+    .image-section img {
+      width: 430px;
+      border-radius: 20px;
+      zoom: 1;
+      transition: zoom 100s linear;
+    }
+
+    .image-section  :hover{
+      zoom: 1.1;
+    }
+
+    .card {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      background: #EEEE;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+
+    .card h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card .price {
+      float: right;
+      color: #888;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+      margin: 10px 0 0 0;
+      line-height: 1.4;
+    }
+
+    .card .stars {
+      color: #FFD700;
+      font-size: 14px;
+    }
+
+    
     </style>
     
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="logo.png" loading="lazy" alt="logo" height="95">
-    </div>
-    <nav>
-      <ul>
-        <li><a style="float:left" href="./index.html">Home</a></li>
-        <li><a style="float:left" href="./about/2.about.html">About</a></li>
-        <li><a style="float:left" href="./3.Service.html">Service</a></li>
-        <li><a style="float:left" href="./MENU/4.MENU_NEWPAGE.html">Menu</a></li>
-        <li><a style="float:left" href="./contactus/5.contactus-page.html">Contact</a></li>
-      </ul>
+
+<!-- Header navbar -->
+
+  <header class="header">
+    
+    <div class="logo"><img src="logo.png" alt="Logo"></div>
+    <div class="Text">Mhoub Khmer</div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./3.Service.html">Service</a></li>
+            <li><a href="./MENU/4.MENU_NEWPAGE.html">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#book" class="btn">Book a Table</a>
     </nav>
-    <a href="./booking/Booking form.html" class="book-btn">
-      <span>Book a Table</span>
-    </a>
-  </header>
+</header>
+
+<!-- Hero section-->
 
     <main class="hero-section">
         <div class="hero-text">
@@ -317,7 +589,30 @@
     </div>
   </div>
 
-  <!-- Footer section -->
+  <!-- Customer review -->
+ 
+<div class="testimonial-section">
+  <div class="testimonial-text">
+      <h6>Customer Review</h6>
+      <p>The fish Ah Mok was simply delightful! The spices were perfectly balanced, and the creamy coconut flavor melted in my mouth. Served in a banana leaf, it felt authentic and fresh. Highly recommend trying it!</p>
+      <div class="customer">
+          <img src="customer feedback.jpg" alt="Customer Image">
+          <div class="customer-info">
+              <h4>Chav_chet</h4>
+              <span>Customer</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="image-section">
+      <img src="popular food.jpg" alt="Ah mok with rice">
+      <div class="card">
+          <h4>Order now <span class="price">3.99$</span></h4>
+          <div class="stars">★★★★★</div>
+          <p>Steamed fish curry with coconut milk and fragrant spices, served in a banana leaf.</p>
+      </div>
+  </div>
+</div>
    
   <!-- Footer section -->
 
@@ -331,7 +626,7 @@
       </div>
 
       <div class="footer-section">
-        <h5>MHOUB KHMER</h5>
+        <h5>Mhoub Khmer</h5>
         <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
         <div class="social-icons">
           <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
@@ -352,7 +647,7 @@
       <p>© Distributed By Mhoub KHMER</p>
     </div>
   </footer>
-    
+
 </body>   
   
 
