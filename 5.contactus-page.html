@@ -2,9 +2,7 @@
 <html>
 <head>
     <title>Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Bayon|Francois+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
       
 /*Styling for header navbar*/
@@ -18,7 +16,10 @@
     body {
             font-family: Arial, sans-serif; /* Fallback font */
             margin: 0;
+            padding-top: 70px;
         }
+
+        
 
 
     /* Header Styles */
@@ -106,12 +107,19 @@
 
 /*for contact*/
         body {
-            font-family: sans-serif;
-            margin: auto;
-            padding: 20px;
-        margin-top: 90px;
-            height: 90vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 70vh;
+            background-image: url(contactus/khmer-food.jpg); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keep the background fixed during scroll */
+            padding-top: 70px;
+            font-family: 'Roboto', sans-serif;
         }
+        
 
         header {
             background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background for header content */
@@ -127,15 +135,78 @@
         }
 
         main {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners for a nicer look */
+          max-width: 800px;
+            margin: 80px auto 20px; /* Adjusted margin-top */
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            flex: 1; /* Allow main to expand */
+            overflow-y: auto; /* Add scrollbar if content overflows */
+            /* max-height: calc(100vh - 200px);  Remove max-height if you want unlimited scrolling */
+        }
+
+        .content-wrapper {
+            text-align: center; /* Center the text within the content wrapper */
+            padding: 0px; /* Add more padding for a spacious feel */
+        }
+
+        .content-wrapper h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif; /* Font for the heading */
+        }
+
+        .content-wrapper p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif; /* Font for the paragraph */
         }
 
         form {
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the form elements */
+            width: 80%; /* Make the form take up a more reasonable width */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 100%; /* Make labels align with the text fields */
+            text-align: left; /* Align labels to the left */
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        form {
+            margin-top: 50px;
         }
 
         label {
@@ -163,13 +234,14 @@
             cursor: pointer;
         }
 
-         /*Stlyling of Footer section*/
+/*Stlyling of Footer section*/
 
-    footer {
-      background-color: #000000d7;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
+footer {
+  background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
     }
 
     .container3 {
@@ -182,7 +254,6 @@
     .footer-section {
       flex: 1;
       margin: 10px;
-      margin-top: -30px;
     }
 
     .footer-section h5 {
@@ -237,60 +308,59 @@
 </header1>
 
     <main>
+      <div class="content-wrapper"></div>
         <h1>We are here to help!</h1>
+        <br>
         <p>Let us know how we can best serve you. Use the contact form below to email us or select from the topics below that best fit your needs. It's an honor to support you in your journey towards better health.</p>
-
         <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required><br>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
+            <input type="tel" id="phone" name="phone"><br>
 
             <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment"></textarea><br><br>
+            <textarea id="comment" name="comment"></textarea>
 
             <button type="submit">SEND MESSAGE</button>
-        </form>
+        </form><br>
 
         <p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
     </main>
 
     <!-- Footer section -->
 
-  <footer class="footer">
-    <div class="container3">
+    <footer class="footer">
+      <div class="container3">
       <div class="footer-section">
-        <h5>Contact Us</h5>
-        <p><i class="fas fa-map-marker-alt"></i> Location</p>
-        <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
-        <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
+          <h5>Contact Us</h5>
+          <p><i class="fas fa-map-marker-alt"></i> Location</p>
+          <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
+          <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
       </div>
-
       <div class="footer-section">
-        <h5>Mhoub Khmer</h5>
-        <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
-        <div class="social-icons">
+          <h5>Mhoub Khmer</h5>
+          <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
+          <div class="social-icons">
           <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
           <a href="#" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
           <a href="#" style="margin-right: 10px;"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
+          </div>
       </div>
-
       <div class="footer-section">
-        <h5>Opening Hours</h5>
-        <p>Everyday</p>
-        <p>7.00 Am - 11.00 Pm</p>
+          <h5>Opening Hours</h5>
+          <p>Everyday</p>
+          <p>7.00 Am - 11.00 Pm</p>
       </div>
-    </div>
-    <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
       <p>© 2025 All Rights Reserved By Kon Khmer</p>
       <p>© Distributed By Mhoub KHMER</p>
-    </div>
+      </div>
   </footer>
 
     <script>

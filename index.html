@@ -16,8 +16,8 @@
     }
 
     body {
-            font-family: Arial, sans-serif; /* Fallback font */
-            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 70px;
         }
 
 
@@ -102,6 +102,12 @@
         background-color: #45a049;
     }
  
+
+    main {
+            flex: 1; /* Allow main content to expand and fill available space */
+        }
+
+
     /* hero-section*/
 
     .hero-section {
@@ -366,23 +372,24 @@
 
     /*Stlyling of Footer section*/
 
-    footer {
-      background-color: #000000d7;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
+  .footer {
+            background-color: #000000d7;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+          }
 
     .container3 {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding: 0 50px;
+      padding: 50 50px;
     }
 
     .footer-section {
       flex: 1;
-      margin: 10px;
+      margin: 0px;
     }
 
     .footer-section h5 {
@@ -569,22 +576,22 @@
       <div class="food-item">
         <img src="Breakfast food.jpg" alt="Breakfast">
         <h3>Breakfast</h3>
-        <p>26 Items</p>
+        <p>12 Items</p>
       </div>
       <div class="food-item">
         <img src="Lunch food.jpg" alt="Lunch">
         <h3>Lunch</h3>
-        <p>23 Items</p>
+        <p>12 Items</p>
       </div>
       <div class="food-item">
         <img src="Dinner food.jpg" alt="Dinner">
         <h3>Dinner</h3>
-        <p>20 Items</p>
+        <p>12 Items</p>
       </div>
       <div class="food-item">
         <img src="Nom Korm.jpg" alt="Nom Khmer">
         <h3>Nom Korm</h3>
-        <p>26 Items</p>
+        <p>12 Items</p>
       </div>
     </div>
   </div>
