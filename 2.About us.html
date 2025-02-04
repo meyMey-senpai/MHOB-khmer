@@ -9,33 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Mhoub Khmer</title>
     <style>
+
 /*Styling for header navbar*/
   
-* {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    body {
-            font-family: Arial, sans-serif; /* Fallback font */
-            margin: 0;
-        }
 
-
-    /* Header Styles */
+/* Header Styles */
     
     .header1 {
         background-color: #000000d7;
         color: white;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-        padding: 13px 30px;
-        position: fixed;
+        padding: 5px 30px;
+        position: sticky;
         top: 0;
-        left: 0;
-        right: 0; /* Stretch to full width */
         z-index: 1000;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -43,13 +37,8 @@
     .Text {
         font-size: 1.5rem;
         font-family: 'Pacifico', cursive;
+        margin-left: -410px;
     }
-
-    .logo {
-        margin-top: -3px;
-
-    }
-    
 
     .logo img {
             width: 100px; 
@@ -61,20 +50,18 @@
         align-items: center;
         font-size: 1.3rem;
         font-family: "Times New Roman", Times, serif;
-        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.793);
+        /* text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.793); */
         position: relative;
         -webkit-text-stroke:-10px black; 
         -webkit-text-stroke-color: 100px black; 
         color: transparent; 
-        margin-left: auto;
     }
 
     .nav-links {
         list-style: none;
         display: flex;
         gap: 20px;
-        margin-right: 0px;
-        margin-top: 14px;
+        margin-right: 30px;
     }
 
     .nav-links li {
@@ -85,12 +72,9 @@
         text-decoration: none;
         color: white;
         font-weight: bold;
-        padding: 5px 10px; /* Add some padding to links */
-        transition: background-color 0.3s ease; /* Smooth transition */
     }
 
     .nav-links a:hover {
-      background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
         text-decoration: underline;
     }
 
@@ -99,10 +83,9 @@
         text-decoration: underline;
         background-color: #4CAF50;
         color: white;
-        padding: 6px 19px; 
+        padding: 10px 10px;
         border-radius: 5px;
         font-size: 1.2rem;
-        transition: background-color 0.3s ease; /* Smooth transition */
     }
 
     .btn:hover {
@@ -138,16 +121,17 @@
             background-image: url("./All  picture/Restarant.jpg");
             background-size: cover;
             background-position: center;
-            padding: 15rem 0 ;    
+            padding: 17rem 0 ;    
         }
 
         h2{
-            font-size: 3em;
+            font-size: 60px;
             margin: 0;
             margin-top: 5%;
             text-align: center;
             font-family:serif ;
             font-style: oblique;
+            padding-top: 10px;
         }
 
         h3{
@@ -155,40 +139,56 @@
             margin-top: 5%;
             font-family: serif;
             text-decoration: underline;
+            
         }
 
         section {
             padding: 2em;
             justify-items: center;
-            /* margin: 3em; */
+            display: grid;
         }
 
         .about-us {
             text-align: center;  
-
         }
 
-        .image-container{          
-             /* width: 80%; */
+        /* .image-container1{          
+            display: flex;
              text-align: center;
-        } 
-/*About Us section*/
-
-        .about-us p {
-            margin-bottom: 1.5em;
+        }  */
+/*About Us map and year of exsperien section*/
+        /* .about-us p {
+            margin-bottom: 5.5em;
             font-size: 100%;
             font-family: serif;
             font-weight: lighter;
             color: #787878;
-        }
+            float: right;
+            display: flex;
+        } */
         
         .stats {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 2em;
-            float: right;
+            float: left;                      
         }
-
+        .chefs{
+            margin-top: 88px;
+            font-size: 17px;
+            color: #228B22;
+            /* padding-top: 20px; */
+        }
+        /* .chefs h2{
+            margin-top: 200px;
+        } */
+        .chefs p{
+            font-family: serif;
+            color: #000000d7;
+            padding-top: 32px;
+            height: 100px;
+        }
+/*About Our Restarant P*/
         .P{
             font-family: serif;
             color: #787878;
@@ -197,40 +197,49 @@
 
         .stat {
             text-align: center;
-            
+            justify-content: space-around;
+            text-align: center;
         }
         
         .stat h2 {
             font-size: 4em;
-            background-color: #EEEEEE;
-            border-radius: 50%;
             height: 120px;
             padding-top: 10%;
             color: #228B22;
             margin-bottom: 0.5em;
+            
         }
         
         .stat p {
-            margin: 0;
-            font-family: Georgia, serif;
+            margin: 0px;
+            font-family: serif;
+            /* display: flex; */
         }
-        
+        .stat iframe{
+            display: block;
+            margin: 20px auto;
+            margin-left: 20px;
+            max-width: 100%;
+            height: 400px;
+        }
+
+        .stat h3{
+            margin-top: auto;
+            padding-left: 7em;
+        }
         .read-more {
             display: inline-block;
             margin: 2em auto 0;
             margin-left: 45%;
             padding: 1em 0.5em ;
-            padding-right: 1em ;
-            
+            padding-right: 1em ;           
             background-color: #EEEEEE;
-            /* color: hsl(0, 0%, 100%); */
             color: #fff;
             text-decoration: none;
             border-radius: 3px;
             margin-top: 1em;
             text-align: center;
         }
-
 /*About Our Restarant Section*/
 
         .container{
@@ -240,9 +249,11 @@
             text-align: center;
 
         }
+        
         article{
             text-align: center;
         }
+
         .benefit {
              text-align: center;
              padding: 20px;
@@ -268,26 +279,48 @@
             display: flex;
             justify-content: space-between;
         }
-
+/*about us image*/
         .image-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2em;
-            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            flex: 1;
+            padding-right: 20px;
+            /* margin-right: 800px; */
         }
     
         .image-container img {
-            width:200px;
+            width:300px;
             height: auto;
             height: inherit;
             border: 3px solid #ddd;
-            border-radius: 20px;
+            border-radius: 0px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             justify:space-between;
-            margin-left: 5em;
+            margin-left: 0;
             display: flex;
         }
 
+        .content-wrapper {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Add space between elements */
+        }
+
+        .about.content {
+        flex: 1 ; /* Take up the other half */
+        font-family: serif;
+        margin-bottom:100px;
+        font-weight: 700;
+        }
+        .title{
+            font-size: 40px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            color: #228B22;
+            font-family: 'Pacifico', cursive;
+            padding-left: 0px;
+        }
 /*Our Testimonial Section*/
 
         .team-member {
@@ -333,55 +366,57 @@
         
 /*Stlyling of Footer section*/
 
-    footer {
-      background-color: #000000d7;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
+        footer {
+            background-color: #000000d7;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-    .container3 {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 0 50px;
-    }
+        .container3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 50px;
+        }
 
-    .footer-section {
-      flex: 1;
-      margin: 10px;
-    }
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
 
-    .footer-section h5 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      font-family: 'Pacifico', cursive;
-    }
+        .footer-section h5 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: 'Pacifico', cursive;
+        }
 
-    .footer-section p {
-      margin: 13px 0;
-      font-family: serif;
-      font-size: 17px;
-    }
+        .footer-section p {
+            margin: 13px 0;
+            font-family: serif;
+            font-size: 17px;
+        }
 
-    .social-icons a {
-      display: inline-block;
-      margin: 0 5px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
 
-    .footer-bottom {
-      margin-top: 10px;
-      font-size: 15px;
-    }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 15px;
+        }
 
-    .footer-bottom p {
-      margin: 5px 0;
-      font-family: serif;
-    }            
-    
+        .footer-bottom p {
+            margin: 5px 0;
+            font-family: serif;
+        }            
+        /* .container4{
+            float: left;
+        } */
     </style>
 </head>
 <body>
@@ -393,15 +428,15 @@
     <div class="Text">Mhoub Khmer</div>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./2.About us.html">About</a></li>
+            <li><a href="./1.Home Page.html">Home</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="./3.Service.html">Service</a></li>
-            <li><a href="./4.MENU_NEWPAGE.html">Menu</a></li>
-            <li><a href="./5.contactus-page.html">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="Booking form.html" class="btn">Book a Table</a>
+        <a href="#book" class="btn">Book a Table</a>
     </nav>
-</header>
+  </header>
        
 <!-- Welcome to Mhoub Khmer section-->
 
@@ -413,28 +448,42 @@
 
     <h2>About <span style="color: #228B22;">Us</span></h2>
     <section class="about-us">
-        <div class="image-container">
-            <img src="All  picture/khmercom.jpg" alt="Restaurant Interior"class="interior-image">
+        <!-- <h7 class="title">Welcome to <span class="highlight"> Restarant</span></h7> -->
+        <div class="content-wrapper">
+         <div class="image-container">
+            <img src="All  picture/khmercom.jpg" alt="Restaurant Interior"class="food-image"><br>
             <img src="All  picture/Khmer Art.jpg" alt="Restaurant food"class="food-image">
-            <img src="All  picture/Ah muk Khmer.jpg" alt="Restaurant food"class="food-image">
+            
+         </div> 
+         <div class=" about content" >
+            <h7 class="title">Welcome to <span >&#127869; Restarant</span></h7>            
+            <p></p>Mhoub Khmer was recently opened in January 2022. Mhoub Khmer is a sub restaurant by Eleven One Kitchen, Cambodia's first 99% plastic-free restaurant.
+            <p>With two outlets of khmer Kitchen, trendy Toul Tompong and Boeng Keng Kong 1, Khmer Kitchen has established itself as an all-time favorite for Expats and locals due to its environmental triendly business focus and serving exquisite Khmer dishes using local ingredients and MSG-tree. The establishment took the decision to open On Kitchen in 2022, which is more reasonably priced and designed specifically for local people whilesadhering to the same values</p>
+            <!-- <div class="stats"> -->
+         </div>  
         </div>
-            <p>Mhoub Khmer was recently opened in January 2022. Mhoub Khmer is a sub restaurant by Eleven One Kitchen, Cambodia's first 99% plastic-free restaurant.</p>
-        <p>Mhoub Khmer came to life through Chef Mongkol’s love for traditional Khmer cuisine and his drive to serve the less fortunate around him. It is this passion that shaped Mhoub Khmer into a training center for young Cambodians. We teach eager students the cooking techniques to send guests on a culinary journey through our traditional Khmer tastes and flavors. Prepare to go back in time as you uncover the secrets of our traditional Khmer cuisine. We’ll deliver an unparalleled dining experience infused with Cambodia’s unique stories and culture.</p>
     </section>
-
-<!-- Location section -->   
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0004382101397!2d104.90247057221191!3d11.551825788648046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951501ef1507b%3A0x1bca91729d2b19d6!2sInstitute%20of%20finance%20and%20accounting!5e0!3m2!1sen!2skh!4v1737128931172!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <section class="stats">
+    <!-- Location section --> 
+                
+    <section class="stats">       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0004382101397!2d104.90247057221191!3d11.551825788648046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951501ef1507b%3A0x1bca91729d2b19d6!2sInstitute%20of%20finance%20and%20accounting!5e0!3m2!1sen!2skh!4v1737128931172!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="stat">
+            <h3>Explore Our Restarant</h3>
             <h2>3</h2>
             <p>Years of Experience</p>
+            <!-- <h2>5</h2>
+            <p>Popular Master Chefs</p> -->
         </div>
-        <div class="stat">
+        <div class="chefs">
             <h2>5</h2>
-            <p>Popular Master Chefs</p>
+            <p>Popular Chefs</p>
         </div>
+            
     </section>
+    <!-- <div class="chefs">
+        <h2>5</h2>
+        <p>Popular Chefs</p>
+    </div> -->
     <p class="read-more"><a href="#">Read More</a></p>
 
 <!-- About Our Restaurant Section-->
@@ -447,6 +496,7 @@
             </p><br>
             <p>Indulge in Sombai’s array of homemade liqueurs and artisanal products within an artistic Khmer house. Explore a curated shop featuring Siem Reap and Cambodian souvenirs. Sample 10 distinct liqueurs and 3 alcoholic jams – ideal Cambodian gifts and unique Angkor souvenirs for your loved ones. Looking for a cocktail class? They’ve got you covered!</p>
         </div>
+<!---about service icorn section-->        
     </section>
     <div class="container">
         <div class="benefit">
@@ -491,7 +541,7 @@
             <p>Taste the love, savor the experience, and create memories one plate at a time.   </p>
         </div>
         <div class="team-member">
-            <img src="All  picture/Pheakny.jpg" alt="Member 4">
+            <img src="All  picture/NyNy.jpg" alt="Member 4">
             <h3>Ms Thon Sopheakni</h3>
             <p>Fresh ingredients, bold flavors, and a passion for perfection in every dish.</p>
         </div>

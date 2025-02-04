@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Reservation Form</title>
     <style>
         body {
             font-family: sans-serif;
-            background-image: url('https://i.pinimg.com/474x/42/29/a7/4229a7446f405dce7ecf144b5fe9ad0c.jpg');
+            background-image:url("all pic reservation/Restarant.jpg");
             background-size: 100%;
-            color: #ffffff;
+            background-repeat:repeat;   
+            background-color: #ffffff;
+            color: #ddd;
             text-align: center;
         }
 
         h1 {
-            color: #ff9900;
+            
+            
+            font-family: serif;
+            color: #228B22;
             display: inline-block;
             padding-top: 2%;    
         }
-        h3 {
-            font-family: system-ui;          
+        h3{
+            font-family: serif;
+            color: #ffffff;
+        }
+        h2 {
+            font-family: serif; 
+            color: #ddd;         
         }
         h4 {
-            font-family:sans-serif;
-            color: #ffffff ;
+            font-family:serif;
+            color: #555;
             
         }
 
@@ -33,135 +45,253 @@
             margin: 0 auto;
             padding: 20px;
             padding-inline-end: 40px;
-            background-color: #323232;
-            border-radius: 5px;
-            border-radius: 10px;
-            font-family: verdana;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: #555;
+            border-radius: 0px;
+            font-family: sans-serif;
             
         }
 
         input[type="text"],
         input[type="email"],
         input[type="date"],
-        input[type="number"],
+        input[type="Tel"],
         textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #555;
             border-radius: 5px;
-            padding-right: ;
             
         }
 
         select {
-            width: 100%;
+            width: 107%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #555;
             border-radius: 3px;
+            background-color:rgba(255, 255, 255, 0.8) ;
             
         }
 
         button {
-            background-color: #ff9900;
+            background-color: #228B22;
             color: #fff;
             padding: 10px 20px;
-            margin-left: 11%;
+            margin-left: 12%;
             border: none;
             border-radius: 3px;
             cursor: pointer;
         }
         .container {
-            width: 85s%;
+            width: 85%;
             margin: 0 auto; 
             text-align: center;
-            border: 2px solid ;
-            padding: 10px;
+            /* border: 2px solid ; */
+            padding: 10px;  
             margin-top: 1%;
             
         }
 
         .team-member {
             display: inline-block;
-            margin: 20px;
+            margin: 30px;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border-radius: 10%; */
         }
 
         .team-member img {
-            width: 150px; 
-            border-radius: 50%;
+            width: 120px; 
+            height: 150px;
+            /* border-radius: 20%; */
+            
         }
 
         h5 {
             margin-bottom: 15px;
-            color: #ff9900;
-            font-family: sans-serif;
+            color: #228B22;
+            font-family:serif;
             font-size: 30px;
+        }
+        h6{
+            font-family: serif;
+            color: #555;
         }
 
         p {
             margin-bottom: 10px;
+            color: #ffffffdd;
+        }
+
+        .team-member p{
+            color: #555;
+        }
+        
+        .menu-title {
+            display: flex;
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            align-items: center;
+            font-family: serif;
+            justify-content: center;
+            color: #08ce33;
+            padding: 20px 0;
+        }
+
+        .menu-title::before,
+        .menu-title::after {
+            content: "";
+            /* flex: 1; */
+            width: 7%;
+            height: 1px;
+            background-color: #ffffff; /* Match the red line color */
+            margin: 0 10px;
+  
+        }
+
+        .highlight {
+            color: #228B22; /* Highlight the "Menu" in pink/red */
+            font-weight: bold;
+            font-family: serif;
+            font-size: 5em;
+            -webkit-text-stroke-color: #ffffff;
+        }
+/*Stlyling of Footer section*/
+
+        footer {
+            background-color: #000000d7;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 50px;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-section h5 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: 'Pacifico', cursive;
+        }  
+
+       .footer-section p {
+            margin: 13px 0;
+            font-family: serif;
+            font-size: 17px;
+            color: #ddd;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+            font-family: serif;
         }
     </style>
 </head>
 <body>
-
+<!--/>Reservation form-->
     <h1>Reservation</h1>
-    <h2>Taste the Difference</h2>
-    <h4>Good Food, Good Mood More than just a meal it's an experience
-        Where every bite tells a story.</h4>
-
     <form>
         <input type="text" placeholder="Your Name" required><br>
         <input type="email" placeholder="Your Email" required><br>
         <input type="date" placeholder="Date & Time" required><br>
-        <input type="number" placeholder="Phone Number" required><br>
-
-        <select>
+        <!-- <input type="number" placeholder="Phone Number" required><br> -->
+        <input type="tel" placeholder="Phone Number" required><br>
+            <select>
             <option value="1">Single</option>
             <option value="2">Couple</option>
             <option value="3">Meeting</option>
             <option value="4">Family</option>
-        </select><br>
+            </select><br>
 
-        <textarea placeholder="Special Request"></textarea><br>
+            <textarea placeholder="Special Request"></textarea><br>
 
-        <button type="submit">BOOK NOW</button>
-    </form>
-
-    <h3>Find Us</h3>
-
-    <div class="container.map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0004382101397!2d104.90247057221191!3d11.551825788648046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951501ef1507b%3A0x1bca91729d2b19d6!2sInstitute%20of%20finance%20and%20accounting!5e0!3m2!1sen!2skh!4v1737128931172!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <div class="container team">
-        <h5>Meet the Team</h5>
+              <button type="submit">BOOK NOW</button>
+        </form>
+<!--/>our Team section-->
+        <div class="container team">
+        <div class="menu-title">
+            <span class="highlight">Our Team</span>
+          </div>
+<!-- <h5>Meet the Team</h5> -->
         <p>Loving Cambodia, Supporting Mhoub Khmer</p>
         <div class="team-member">
-            <img src="booking/Mak Mey.jpg" alt="Doung ChanRaksmey">
+            <img src="all pic reservation/Mey.jpg" alt="Doung ChanRaksmey">
             <h6>Doung ChanRaksmey</h6>
-            <p>The Founder of Mhoub Khmer Restaurant</p>
+            <p>Leader Team</p>
         </div>
         <div class="team-member">
-            <img src="booking/Mak Fong.jpg" alt="Hong SeavFong">
-            <h6>Hong SeavFong</h6>
-            <p>Shareholder1 of Restaurant</p>
+            <img src="all pic reservation/Seavfong.JPG" alt="Hong SeavFong">
+            <h6>Hong Seavfong</h6>
+            <p>Team Member</p>
         </div>
         <div class="team-member">
-            <img src="booking/Mak Ra.jpg" alt="Ly Bunkanchara">
+            <img src="all pic reservation/Kanchara.jpg" alt="Ly Bunkanchara">
             <h6>Ly Bunkanchara</h6>
-            <p>Shareholder2 Restaurant</p>
+            <p>Team Member</p>
         </div>
         <div class="team-member">
-            <img src="booking/Mak Ny.jpg" alt="Thon Sopheakni">
+            <img src="all pic reservation/NyNy.jpg" alt="Thon Sopheakni">
             <h6>Thon Sopheakni</h6>
-            <p>Shareholder3 Restaurant</p>
+            <p>Team Member</p>
         </div>
     </div>
+    <!-- Footer section -->
 
+  <footer class="footer">
+    <div class="container3">
+      <div class="footer-section">
+        <h5>Contact Us</h5>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <p><i class="fas fa-phone-alt"></i> Call +855 17 623 266</p>
+        <p><i class="fas fa-envelope"></i> mhoubkhmer168@gmail.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h5>Mhoub Khmer</h5>
+        <p>Bringing the authentic flavors of Cambodia to your plate. Explore, taste, and celebrate the culinary traditions of Khmer cuisine with us.</p>
+        <div class="social-icons">
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="margin-right: 10px;"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h5>Opening Hours</h5>
+        <p>Everyday</p>
+        <p>7.00 Am - 11.00 Pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 All Rights Reserved By Kon Khmer</p>
+      <p>© Distributed By Mhoub KHMER</p>
+    </div>
+  </footer>
     </body>
 </html>
 
