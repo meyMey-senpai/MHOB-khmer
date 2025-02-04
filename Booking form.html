@@ -8,24 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Reservation Form</title>
     <style>
+
+        
         body {
             font-family: sans-serif;
             background-image:url("all pic reservation/Restarant.jpg");
             background-size: 100%;
-            background-repeat:repeat;   
+            background-repeat: no-repeat;   
             background-color: #ffffff;
             color: #ddd;
             text-align: center;
+            display: block;
+            margin: 0px;
+            margin-top: ;
+            margin-right: ;
+            margin-bottom: ;
+            margin-left: ;
+        }
+        
+        h1 {
+            font-family: serif;
+            color: #7edc7e;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center horizontally */
+            padding-top: 2%;
+            font-size: 50px;
         }
 
-        h1 {
-            
-            
-            font-family: serif;
-            color: #228B22;
-            display: inline-block;
-            padding-top: 2%;    
+        h1 img {
+            max-height: 80px;
+            margin-bottom: 10px; /* Space below the logo */
         }
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1 a:hover {
+            color: #555;
+        }
+
+    
         h3{
             font-family: serif;
             color: #ffffff;
@@ -47,7 +70,7 @@
             padding-inline-end: 40px;
             background-color: rgba(255, 255, 255, 0.8);
             box-shadow: #555;
-            border-radius: 0px;
+            border-radius: 10px;
             font-family: sans-serif;
             
         }
@@ -89,7 +112,7 @@
             margin: 0 auto; 
             text-align: center;
             /* border: 2px solid ; */
-            padding: 10px;  
+            padding: -10px;  
             margin-top: 1%;
             
         }
@@ -104,7 +127,6 @@
         }
 
         .team-member img {
-            width: 120px; 
             height: 150px;
             /* border-radius: 20%; */
             
@@ -115,14 +137,17 @@
             color: #228B22;
             font-family:serif;
             font-size: 30px;
+            padding: -100px; 
         }
         h6{
             font-family: serif;
             color: #555;
+            font-size: 15px;
+            margin-bottom: -10px;
         }
 
         p {
-            margin-bottom: 10px;
+            margin-bottom: -10px;
             color: #ffffffdd;
         }
 
@@ -152,7 +177,7 @@
         }
 
         .highlight {
-            color: #228B22; /* Highlight the "Menu" in pink/red */
+            color: #42df42; /* Highlight the "Menu" in pink/red */
             font-weight: bold;
             font-family: serif;
             font-size: 5em;
@@ -165,13 +190,20 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            width: 100% !important; /* Override any other width rules */
+            margin: 0 !important; /* Override any other margin rules */
+            box-sizing: border-box; /* Include padding and border in width */
         }
 
         .container3 {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 0 50px;
+            fflex-wrap: wrap;
+            padding: 0 !important; /* Override any other padding rules */
+            width: 100% !important; /* Override any other width rules */
+            max-width: 1200px; /* Optional: Set a max-width if needed */
+            margin: 0 auto !important; /* Override any other margin rules */
+            box-sizing: border-box; /* Include padding and border in width */
         }
 
         .footer-section {
@@ -213,7 +245,10 @@
 </head>
 <body>
 <!--/>Reservation form-->
-    <h1>Reservation</h1>
+<h1>
+    <a href="index.html"> <img src="logo.png" alt="Logo"></a>
+    Reservation
+</h1>
     <form>
         <input type="text" placeholder="Your Name" required><br>
         <input type="email" placeholder="Your Email" required><br>
