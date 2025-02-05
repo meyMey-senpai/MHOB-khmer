@@ -159,12 +159,8 @@
             
         }
 
-        section {
-            padding: 2em;
-            justify-items: center;
-            display: grid;
-        }
-
+         
+        
         .about-us {
             text-align: center;  
         }
@@ -195,6 +191,12 @@ body {
         gap: 10px;
         margin-left: 100px;
         margin-top: 100px;
+        zoom: 1;
+        transition: zoom 100s linear;
+    }
+
+    .gallery :hover{
+        zoom: 1.1;
     }
 
     .gallery img {
@@ -267,13 +269,19 @@ body {
         }
 
         .benefit {
-             text-align: center;
-             padding: 20px;
-             border: 1px solid #e4e4e4;
-             border-radius: 5px;
-             width: 200px; /* Adjust width as needed */
-             background-color: #f8f8f8;
-             box-shadow:0 2px 5px rgba(0, 0, 0, 0.1); #373636;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #e4e4e4;
+            border-radius: 5px;
+            width: 200px; /* Adjust width as needed */
+            background-color: #f8f8f8;
+            box-shadow:0 2px 5px rgba(0, 0, 0, 0.1); #373636;
+            zoom: 1;
+            transition: zoom 100s linear;
+        }
+
+        .benefit :hover{
+            zoom: 1.1;
         }
 
         .benefit img {
@@ -290,7 +298,27 @@ body {
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            font-family: serif;
+            
         }
+
+        section {
+            padding: 2em;
+            justify-items: center;
+            display: grid;
+
+        }
+        
+        section p2 {
+            padding: 10px;
+            justify-items: center;
+            display: grid;
+            margin-left: 25px;
+    
+            
+        }
+
+        
 /*about us image*/
         .image-container {
             display: grid;
@@ -298,7 +326,7 @@ body {
             gap: 10px;
             flex: 1;
             padding-right: 20px;
-            /* margin-right: 800px; */
+            
         }
     
         .image-container img {
@@ -427,9 +455,7 @@ body {
             margin: 5px 0;
             font-family: serif;
         }            
-        /* .container4{
-            float: left;
-        } */
+        
     </style>
 </head>
 <body>
@@ -488,11 +514,15 @@ body {
 
 <h3>About Our <span style="color: #228B22";>Restaurant</span></h3>
 <section>
-    <div class="P">
-        <p>As a proud member of the Restaurant Collection, our goal is straightforward: to offer you an unparalleled dining experience tailored to your tastes. In our establishments, your culinary preferences always take center stage.
-            Through Adventures Cambodia and Akim Vespa, unlock the true essence of Cambodia with tours designed by those deeply rooted in the region. Their expert guides unveil the real Cambodia, featuring an enticing Siem Reap food tour and an exceptional Private Angkor Wat tour. Your journey of a lifetime awaits, complete with a personal driver and the thrill of riding a Vespa scooter or vintage Jeep!
-        </p><br>
-        <p>Indulge in Sombai’s array of homemade liqueurs and artisanal products within an artistic Khmer house. Explore a curated shop featuring Siem Reap and Cambodian souvenirs. Sample 10 distinct liqueurs and 3 alcoholic jams – ideal Cambodian gifts and unique Angkor souvenirs for your loved ones. Looking for a cocktail class? They’ve got you covered!</p>
+    <div class="P2">
+        <Indulge>As a proud member of the Restaurant Collection, our goal is straightforward: to offer you an unparalleled dining experience tailored to your tastes. 
+            <br>In our establishments, your culinary preferences always take center stage. Through Adventures Cambodia and Akim Vespa, unlock the true essence 
+            <br>of Cambodia with tours designed by those deeply rooted in the region. Their expert guides unveil the real Cambodia, featuring an enticing 
+            <br>Siem Reap food tour and an exceptional Private Angkor Wat tour. Your journey of a lifetime awaits, complete with a personal driver and the thrill 
+            <br>of riding a Vespa scooter or vintage Jeep! <br>
+        <br>Indulge in Sombai’s array of homemade liqueurs and artisanal products within an artistic Khmer house. Explore a curated shop featuring Siem Reap 
+            <br>and Cambodian souvenirs. Sample 10 distinct liqueurs and 3 alcoholic jams – ideal Cambodian gifts and unique Angkor souvenirs for your loved ones. 
+            <br>Looking for a cocktail class? They’ve got you covered!</p2>
     </div>
 <!---about service icorn section-->        
 </section>
@@ -500,7 +530,7 @@ body {
     <div class="benefit">
       <img src="https://i.pinimg.com/474x/03/f4/9a/03f49a1b648fa2136c08790748abc0bb.jpg" alt="Free Shipping">
       <h3>Free Shipping</h3>
-      <p>Free shipping for 24 order or order above $100.</p>
+      <p>Free shipping for 5 order or order above $10.</p>
     </div>
     <div class="benefit">
       <img src="https://i.pinimg.com/474x/c3/88/fa/c388fa034d81365a80e131923cb0866a.jpg" alt="24/7 Support">
