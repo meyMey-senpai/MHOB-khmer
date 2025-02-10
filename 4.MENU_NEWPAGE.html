@@ -253,13 +253,16 @@
 
         /*cardordered*/
         .confirmation-card {
-            background-color: #060806;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 30px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.415);
-            font-size: 20px;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 80px rgba(0, 0, 0,)
+            z-index: 1001;
         }
 
         /*Stlyling of Footer section*/
@@ -825,70 +828,48 @@
 
         <script>
             function showMenu(menuType) {
-                const menuItems = document.querySelectorAll('.menu-item');
+            const menuItems = document.querySelectorAll('.menu-item');
 
-                menuItems.forEach(item => {
-                    if (item.classList.contains(menuType)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-
-                // Update active tab
-                const menuTabs = document.querySelectorAll('.menu-tab');
-                menuTabs.forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                document.querySelector(`.menu-tab[onclick="showMenu('${menuType}')"]`).classList.add('active');
-            }
-            function selectItem(button) {
-                const menuItem = button.closest('.menu-item');
-                const itemName = menuItem.querySelector('h3').textContent;
-                const itemImage = menuItem.querySelector('img').src;
-
-                document.getElementById('confirmationImage').src = itemImage;
-                document.getElementById('confirmationName').textContent = itemName;
-                document.getElementById('confirmationCard').style.display = 'block';
-            }
-
-            function closeConfirmationCard() {
-                document.getElementById('confirmationCard').style.display = 'none';
-            }
-
-            function submitOrder() {
-                const itemName = document.getElementById('confirmationName').textContent;
-
-                fetch('/send-email', { // Replace with your Java backend endpoint URL
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ itemName: itemName })
-                })
-                    .then(response => {
-                        if (response.ok) {
-                            alert("Order submitted!");
-                        } else {
-                            alert("Error submitting order. Please try again.");
-                        }
-                    })
-                    .catch(error => {
-                        console.error("Error:", error);
-                        alert("Error submitting order. Please try again.");
-                    });
-
-                closeConfirmationCard();
-            }
-
-            // Add onclick to all select buttons:
-            const selectButtons = document.querySelectorAll('.select-button');
-            selectButtons.forEach(button => {
-                button.onclick = () => selectItem(button);
+            menuItems.forEach(item => {
+                item.style.display = item.classList.contains(menuType) ? 'block' : 'none';
             });
 
-        </script>
+            // Update active tab
+            const menuTabs = document.querySelectorAll('.menu-tab');
+            menuTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`.menu-tab[onclick="showMenu('${menuType}')"]`).classList.add('active');
+        }
 
+        function selectItem(button) {
+            const menuItem = button.closest('.menu-item');
+            const itemName = menuItem.querySelector('h3').textContent;
+            const itemImage = menuItem.querySelector('img').src;
+
+            document.getElementById('confirmationImage').src = itemImage;
+            document.getElementById('confirmationName').textContent = itemName;
+            document.getElementById('confirmationCard').style.display = 'block';
+        }
+
+        function closeConfirmationCard() {
+            document.getElementById('confirmationCard').style.display = 'none';
+        }
+
+        function submitOrder() {
+            const itemName = document.getElementById('confirmationName').textContent;
+
+            // Simulate order submission (You can replace this with actual submission logic)
+            alert(`Ordered: ${itemName}`);
+            closeConfirmationCard();
+        }
+
+        // Add onclick to all select buttons:
+        const selectButtons = document.querySelectorAll('.select-button');
+        selectButtons.forEach(button => {
+            button.onclick = () => selectItem(button);
+        });
+    </script>
 </body>
 
 </html>
