@@ -183,6 +183,7 @@ body {
         padding: 50px;
         align-items: center;
         justify-content: space-between;
+        
     }
 
     .gallery {
@@ -207,7 +208,8 @@ body {
 
     .content {
         max-width: 500px;
-        margin-right: 200px;
+        margin-right: 150px;
+        margin-left: 50PX;
     }
 
     .content h3 {
@@ -254,6 +256,9 @@ body {
         border-radius: 5px;
     }
 
+    .btn1:hover {
+            transform: scale(1.1); /* Zoom effect */;
+    }
 /*About Our Restarant Section*/
 
 .container{
@@ -261,6 +266,7 @@ body {
             justify-content: space-between; 
             margin: 20px 0;
             text-align: center;
+            position: fixed;
 
         }
         
@@ -463,7 +469,8 @@ body {
 <!-- Header navbar -->
 
  <header class="header1">
-    <div class="logo"><img src="logo.png" alt="Logo"></div>
+    <a href="/2.About us.html" class="logo">
+        <img src="logo.png" alt="Logo"></a>
         <div class="Text">Mhoub Khmer</div>
         <nav class="navbar">
             <ul class="nav-links">
@@ -506,13 +513,13 @@ body {
                 <p>Popular <strong>MASTER CHEFS</strong></p>
             </div>
         </div>
-        <a href="#" class="btn1">READ MORE</a>
+        <a href="#about-restaurant" class="btn1">READ MORE</a>
     </div>
 </section>   
 
 <!-- About Our Restaurant Section-->
 
-<h3>About Our <span style="color: #228B22";>Restaurant</span></h3>
+<h3 id="about-restaurant">About Our <span style="color: #228B22";>Restaurant</span></h3>
 <section>
     <div class="P2">
         <Indulge>As a proud member of the Restaurant Collection, our goal is straightforward: to offer you an unparalleled dining experience tailored to your tastes. 

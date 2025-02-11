@@ -25,6 +25,14 @@
             margin-bottom: ;
             margin-left: ;
         }
+
+        .logo img {
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .logo:hover img {
+            transform: scale(1.1); /* Zoom effect */
+        }
         
         h1 {
             font-family: serif;
@@ -99,7 +107,7 @@
             
         }
 
-        button {
+        .zoom-button {
             background-color: #228B22;
             color: #fff;
             padding: 10px 20px;
@@ -107,7 +115,13 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
+            transition: transform 0.3s ease; /* Smooth transition */
         }
+
+        .zoom-button:hover {
+            transform: scale(1.1); /* Zoom effect */
+        }
+        
         .container {
             width: 85%;
             margin: 0 auto; 
@@ -124,7 +138,11 @@
             text-align: center;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
-            /* border-radius: 10%; */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .team-member:hover {
+            transform: scale(1.2); /* Zoom effect */
         }
 
         .team-member img {
@@ -249,7 +267,9 @@
 <body>
 <!--/>Reservation form-->
 <h1>
-    <a href="index.html"> <img src="logo.png" alt="Logo"></a>
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo">
+    </a>
     Reservation
 </h1>
     <form>
@@ -267,7 +287,7 @@
 
             <textarea placeholder="Special Request"></textarea><br>
 
-              <button type="submit">BOOK NOW</button>
+            <button type="submit" class="zoom-button">BOOK NOW</button>
         </form>
 <!--/>our Team section-->
         <div class="container team">
