@@ -142,7 +142,7 @@
         }
 
         h2{
-            font-size: 60px;
+            font-size: 50px;
             margin: 0;
             margin-top: 5%;
             text-align: center;
@@ -151,15 +151,24 @@
             padding-top: 10px;
         }
 
+        .team-member h3{
+            font-size: 25px;
+        }
         h3{
             text-align: center;
             margin-top: 5%;
             font-family: serif;
             text-decoration: underline;
-            
+            font-size: 50px;
         }
 
-         
+        .content h3{
+            font-size: 40px; /* Adjust as needed */
+            white-space: nowrap; /* Ensure it stays on one line */
+            text-overflow: ellipsis; /* Optional for overflow handling */
+        }
+        
+        
         
         .about-us {
             text-align: center;  
@@ -168,100 +177,124 @@
 
 /* About Section*/
         
-body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        color: #333;
-    }
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
 
-/* About Section */
-    
-    .about {
-        display: flex;
-        padding: 50px;
-        align-items: center;
-        justify-content: space-between;
+    /* About Section */
         
-    }
+        .about {
+            display: flex;
+            padding: 50px;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
 
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-left: 100px;
-        margin-top: 100px;
-        zoom: 1;
-        transition: zoom 100s linear;
-    }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-left: 100px;
+            margin-top: 100px;
+            zoom: 1;
+            transition: zoom 100s linear;
+        }
 
-    .gallery :hover{
-        zoom: 1.1;
-    }
+        .gallery :hover{
+            zoom: 1.1;
+        }
 
-    .gallery img {
-        width: 250px;
-        height: 300px;
-        border-radius: 10px;
-    }
+        .gallery img {
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+        }
 
-    .content {
-        max-width: 500px;
-        margin-right: 150px;
-        margin-left: 50PX;
-    }
+        .content {
+            max-width: 500px;
+            margin-right: 150px;
+            margin-left: 50PX;
+        }
 
-    .content h3 {
-        color: #4CAF50;
-        font-family: "Pacifico", cursive;
-        font-style: italic;
-        margin-right: 380px;
-    }
+        .content h3 {
+            color: #4CAF50;
+            font-family: "Pacifico", cursive;
+            font-style: italic;
+            margin-right: 380px;
+        }
 
-    .content h5 {
-        font-size: 32px;
-        font-weight: bold;
-    }
+        .content h5 {
+            font-size: 32px;
+            font-weight: bold;
+        }
 
-    .content h5 img {
-        color:#4CAF50;
-        font-weight: bold;
-        width: 40px;
-    }
+        .content h5 img {
+            color:#4CAF50;
+            font-weight: bold;
+            width: 40px;
+        }
 
-    .content p {
-        font-family: serif;
-        font-size: 17px;
-    }
+        .content p {
+            font-family: serif;
+            font-size: 17px;
+        }
 
-    .stats {
-        display: flex;
-        gap: 50px;
-        margin: 20px 0;
-    }
+        .stats {
+            display: flex;
+            gap: 50px;
+            margin: 20px 0;
+        }
 
-    .stats div h2 {
-        font-size: 30px;
-        color: #28662a;
-        font-weight: bold;
-    }
+        .stats div h2 {
+            font-size: 30px;
+            color: #28662a;
+            font-weight: bold;
+        }
 
-    .btn1 {
-        display: inline-block;
+        .btn1 {
+        display: inline-flex; /* Use inline-flex for proper alignment */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
         background: #28662a;
-        color: white;
+        color: rgb(255, 255, 255);
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
-    }
+        font-family: serif;
+        font-size: 25px;
+        margin-left: 125px;
+        position: relative;
+        }
 
-    .btn1:hover {
-            transform: scale(1.1); /* Zoom effect */;
-    }
+        .btn1:before,
+        .btn1:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 50%; /* Increase width for a larger line */
+            height: 3px; /* Increase height for a thicker line */
+            background-color: #000000; /* Match the line color */
+        }
+
+        .btn1:before {
+            left: -50%; /* Adjust positioning as necessary */
+        }
+
+        .btn1:after {
+            right: -50%; /* Adjust positioning as necessary */
+        }
+
+        .btn1:hover {
+            transform: scale(1.1); /* Zoom effect */
+        }
 /*About Our Restarant Section*/
 
-.container{
+        .container{
             display: flex; 
             justify-content: space-between; 
             margin: 20px 0;
@@ -372,43 +405,35 @@ body {
 
         .team-member {
             display: inline-block;
-            width: 200px;
-        }
-
-        .team-member img {
-            width: 150px;
-            height: auto;
-            border-radius: 30%;
-            margin-bottom: 1em;
-            margin-top: 10%;
-            flex: 1;
-            object-fit: cover;
-        }
-        
-        .team-member {
-            display: inline-block;
+            width: 200px; /* Fixed width */
+            height: 370px; /* Fixed height */
             margin: 1.2em;            
-            width: 200px;
             text-align: center;
             border: 3px solid #efe9e9; 
             border-radius: 10px; 
             padding: 1em; 
             box-shadow: 0 2px 5px rgba(202, 193, 193, 0.1);
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        .team-member:hover {
+            transform: scale(1.1); /* Zoom effect */
         }
 
         .team-member img {
-            width: 130Px;
-            height: 200px;
-            border-radius: 1%;
-            margin-bottom: 2em;
+            width: 130px; /* Fixed width for images */
+            height: 150px; /* Fixed height for images */
+            border-radius: 50%; /* Make images circular */
+            margin-bottom: 1em;
         }
-        
+
         .team-member h3 {
             margin-bottom: 0.5em;
         }
-        
+
         .team-member p {
             margin: 0;
+            font-size: 14px; /* Adjust font size if needed */
         }
         
 /*Stlyling of Footer section*/
@@ -494,7 +519,7 @@ body {
 <section class="about">
     <div class="gallery">
         <img src="All  picture/About us_Interior restaurant.jpg" alt="Restaurant Interior">
-        <img src="All  picture/About us_exterior restaurant.jpg" alt="Restaurant exterior">
+        <img src="all pic reservation/Restarant.jpg" alt="Restaurant exterior">
         <img src="All  picture/About us_chicken.jpg" alt="Serving Dish">
         <img src="All  picture/About us_Dining table.jpg" alt="Dining Area">
     </div>
@@ -513,7 +538,7 @@ body {
                 <p>Popular <strong>MASTER CHEFS</strong></p>
             </div>
         </div>
-        <a href="#about-restaurant" class="btn1">READ MORE</a>
+        <a href="https://maps.app.goo.gl/BfPpxU8w5shnFLUr7" class="btn1">Our Location</a>
     </div>
 </section>   
 
@@ -522,14 +547,16 @@ body {
 <h3 id="about-restaurant">About Our <span style="color: #228B22";>Restaurant</span></h3>
 <section>
     <div class="P2">
-        <Indulge>As a proud member of the Restaurant Collection, our goal is straightforward: to offer you an unparalleled dining experience tailored to your tastes. 
-            <br>In our establishments, your culinary preferences always take center stage. Through Adventures Cambodia and Akim Vespa, unlock the true essence 
-            <br>of Cambodia with tours designed by those deeply rooted in the region. Their expert guides unveil the real Cambodia, featuring an enticing 
-            <br>Siem Reap food tour and an exceptional Private Angkor Wat tour. Your journey of a lifetime awaits, complete with a personal driver and the thrill 
-            <br>of riding a Vespa scooter or vintage Jeep! <br>
-        <br>Indulge in Sombai’s array of homemade liqueurs and artisanal products within an artistic Khmer house. Explore a curated shop featuring Siem Reap 
-            <br>and Cambodian souvenirs. Sample 10 distinct liqueurs and 3 alcoholic jams – ideal Cambodian gifts and unique Angkor souvenirs for your loved ones. 
-            <br>Looking for a cocktail class? They’ve got you covered!</p2>
+        <Indulge>Welcome to MHOUB KHMER, where we celebrate the rich culinary heritage of Cambodia. 
+            <br>Our menu is a vibrant tapestry of traditional Siem Reap dishes, each crafted to highlight the authentic flavors of the region. 
+            <br>From aromatic curries to fresh seafood, every dish is prepared using locally sourced ingredients to ensure the highest quality and taste.
+            <br>At MHOUB KHMER, dining is more than just a meal; it’s an experience. Our inviting atmosphere is designed to make you feel at home, 
+            <br>whether you're enjoying a romantic dinner or gathering with friends and family. Our knowledgeable staff is passionate about 
+            <br>In addition to our exquisite food, Don’t miss our selection of homemade desserts, which are the perfect sweet ending to your meal.<br>
+        <br>Explore our shop, where we feature a curated collection of artisanal Khmer crafts and unique gifts. 
+        <br>From beautifully woven textiles to traditional pottery, each item tells a story and makes for a perfect memento of your visit.
+        <br>Join us at MHOUB KHMER for an unforgettable dining experience that celebrates the essence of Cambodian culture and hospitality. 
+        <br>We look forward to welcoming you!</p2>
     </div>
 <!---about service icorn section-->        
 </section>
